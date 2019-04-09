@@ -1,0 +1,21 @@
+{
+  "API_VERSION": "/api/v1",
+  "port": 4000,
+  "CLOUDANT_URL": "https://702824d1-0c8b-4ba5-8f8e-c0b4e7c4569c-bluemix:ccea4fa4db34fd1b1d8ec4bc5cddf0198da31776ab98b246c21b5bb2028b42d2@702824d1-0c8b-4ba5-8f8e-c0b4e7c4569c-bluemix.cloudantnosqldb.appdomain.cloud",
+  "VCAP_SERVICES": {
+    "cloudantNoSQLDB": [{
+      "credentials": {
+        "apikey": "PKhlEXjJnc7mqIpG-ZT7ON_aEsw16G0UhDhDg9_N0vXP",
+        "host": "702824d1-0c8b-4ba5-8f8e-c0b4e7c4569c-bluemix.cloudantnosqldb.appdomain.cloud",
+        "iam_apikey_description": "Auto generated apikey during resource-key operation for Instance - crn:v1:bluemix:public:cloudantnosqldb:us-south:a/98a4bc07b2ef123d28e6829e8b14a84d:ee11bbb2-507c-482a-b997-9765e3cea81e::",
+        "iam_apikey_name": "auto-generated-apikey-429d314d-bda1-4b4f-a456-daf696f52f29",
+        "iam_role_crn": "crn:v1:bluemix:public:iam::::serviceRole:Manager",
+        "iam_serviceid_crn": "crn:v1:bluemix:public:iam-identity::a/98a4bc07b2ef123d28e6829e8b14a84d::serviceid:ServiceId-e6d56292-eeba-441a-a644-ca579bab0647",
+        "password": "ccea4fa4db34fd1b1d8ec4bc5cddf0198da31776ab98b246c21b5bb2028b42d2",
+        "port": 443,
+        "url": "https://702824d1-0c8b-4ba5-8f8e-c0b4e7c4569c-bluemix:ccea4fa4db34fd1b1d8ec4bc5cddf0198da31776ab98b246c21b5bb2028b42d2@702824d1-0c8b-4ba5-8f8e-c0b4e7c4569c-bluemix.cloudantnosqldb.appdomain.cloud",
+        "username": "702824d1-0c8b-4ba5-8f8e-c0b4e7c4569c-bluemix"
+      }
+    }]
+  }
+}

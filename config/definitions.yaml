@@ -1,0 +1,21 @@
+definitions:
+  band:
+    type: 'object'
+    properties:
+      id:
+        type: 'string'
+  point:
+    type: 'object'
+    properties:
+      id:
+        type: 'string'
+  user:
+    type: 'object'
+    properties:
+      id:
+        type: 'string'
+  visual:
+    type: 'object'
+    properties:
+      id:
+        type: 'string'

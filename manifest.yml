@@ -1,0 +1,3 @@
+applications:
+  - name: kbli-startup-api-server
+    memory: 512m

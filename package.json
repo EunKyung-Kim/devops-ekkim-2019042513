@@ -1,0 +1,38 @@
+{
+  "name": "KBLI-Startup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js",
+    "start": "node server.js"
+  },
+  "author": "kisjang",
+  "license": "ISC",
+  "dependencies": {
+    "@cloudant/cloudant": "^3.0.1",
+    "cloudant": "^1.10.0-NOTICE",
+    "cors": "^2.8.4",
+    "delay": "^4.1.0",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "helmet": "^3.13.0",
+    "ibmiotf": "^0.2.41",
+    "log4js": "^3.0.5",
+    "morgan": "^1.9.1",
+    "mqtt": "^2.18.8",
+    "multer": "^1.4.0",
+    "nconf": "^0.10.0",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2",
+    "sleep": "^5.2.3",
+    "swagger-jsdoc": "^3.2.3",
+    "swagger-ui-express": "^4.0.1",
+    "underscore": "^1.9.1",
+    "uuid": "^3.3.2"
+  },
+  "engines": {
+    "node": "8.9.1",
+    "npm": "6.4.1"
+  }
+}
