@@ -6,6 +6,7 @@ const nconf = require('nconf');
 const express = require('express');
 const helmet = require('helmet');
 const morgan = require('morgan');
+
 const logger = require('../logger')('init');
 const swaggerJSDoc = require('swagger-jsdoc');
 const swaggerUi = require('swagger-ui-express');

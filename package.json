@@ -19,17 +19,21 @@
     "helmet": "^3.13.0",
     "ibmiotf": "^0.2.41",
     "log4js": "^3.0.5",
+    "moment": "^2.24.0",
     "morgan": "^1.9.1",
     "mqtt": "^2.18.8",
-    "multer": "^1.4.0",
+    "multer": "^1.4.1",
+    "mysql": "^2.16.0",
     "nconf": "^0.10.0",
+    "node-cron": "^2.0.3",
     "request": "^2.88.0",
     "request-promise": "^4.2.2",
     "sleep": "^5.2.3",
     "swagger-jsdoc": "^3.2.3",
     "swagger-ui-express": "^4.0.1",
     "underscore": "^1.9.1",
-    "uuid": "^3.3.2"
+    "uuid": "^3.3.2",
+    "watson-developer-cloud": "^4.0.1"
   },
   "engines": {
     "node": "8.9.1",

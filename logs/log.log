@@ -1,2771 +1,436 @@
-[2019-04-09T09:47:21.622] [INFO] drones - GET - get band data...
-[2019-04-09T09:48:01.014] [INFO] drones - GET - get band data...
-[2019-04-09T09:57:32.621] [INFO] drones - GET - get band data...
-[2019-04-09T09:57:59.603] [INFO] drones - GET - get band data...
-[2019-04-09T10:02:46.018] [INFO] drones - GET - get band data...
-[2019-04-09T10:04:25.501] [INFO] drones - GET - get band data...
-[2019-04-09T10:05:01.586] [INFO] drones - GET - get band data...
-[2019-04-09T10:05:50.471] [INFO] drones - GET - get band data...
-[2019-04-09T10:06:12.737] [INFO] drones - GET - get band data...
-[2019-04-09T10:08:58.177] [INFO] drones - GET - get band data...
-[2019-04-09T10:09:39.360] [INFO] drones - GET - get band data...
-[2019-04-09T10:31:25.164] [INFO] drones - GET - get band data...
-[2019-04-09T10:31:36.959] [INFO] drones - GET - get band data...
-[2019-04-09T10:32:08.336] [INFO] drones - GET - get band data...
-[2019-04-09T10:32:27.895] [ERROR] init - IncomingMessage {
-  _readableState: 
-   ReadableState {
-     objectMode: false,
-     highWaterMark: 16384,
-     buffer: BufferList { head: null, tail: null, length: 0 },
-     length: 0,
-     pipes: null,
-     pipesCount: 0,
-     flowing: null,
-     ended: true,
-     endEmitted: false,
-     reading: false,
-     sync: true,
-     needReadable: false,
-     emittedReadable: true,
-     readableListening: false,
-     resumeScheduled: false,
-     destroyed: false,
-     defaultEncoding: 'utf8',
-     awaitDrain: 0,
-     readingMore: true,
-     decoder: null,
-     encoding: null },
-  readable: true,
-  domain: null,
-  _events: {},
-  _eventsCount: 0,
-  _maxListeners: undefined,
-  socket: 
-   Socket {
-     connecting: false,
-     _hadError: false,
-     _handle: 
-      TCP {
-        reading: true,
-        owner: [Circular],
-        onread: [Function: onread],
-        onconnection: null,
-        writeQueueSize: 0,
-        _consumed: true },
-     _parent: null,
-     _host: null,
-     _readableState: 
-      ReadableState {
-        objectMode: false,
-        highWaterMark: 16384,
-        buffer: [Object],
-        length: 0,
-        pipes: null,
-        pipesCount: 0,
-        flowing: true,
-        ended: false,
-        endEmitted: false,
-        reading: true,
-        sync: false,
-        needReadable: true,
-        emittedReadable: false,
-        readableListening: false,
-        resumeScheduled: false,
-        destroyed: false,
-        defaultEncoding: 'utf8',
-        awaitDrain: 0,
-        readingMore: false,
-        decoder: null,
-        encoding: null },
-     readable: true,
-     domain: null,
-     _events: 
-      { end: [Array],
-        finish: [Function: onSocketFinish],
-        _socketEnd: [Function: onSocketEnd],
-        drain: [Array],
-        timeout: [Function: socketOnTimeout],
-        data: [Function: bound socketOnData],
-        error: [Array],
-        close: [Array],
-        resume: [Function: onSocketResume],
-        pause: [Function: onSocketPause] },
-     _eventsCount: 10,
-     _maxListeners: undefined,
-     _writableState: 
-      WritableState {
-        objectMode: false,
-        highWaterMark: 16384,
-        finalCalled: false,
-        needDrain: false,
-        ending: false,
-        ended: false,
-        finished: false,
-        destroyed: false,
-        decodeStrings: false,
-        defaultEncoding: 'utf8',
-        length: 0,
-        writing: false,
-        corked: 0,
-        sync: false,
-        bufferProcessing: false,
-        onwrite: [Function: bound onwrite],
-        writecb: null,
-        writelen: 0,
-        bufferedRequest: null,
-        lastBufferedRequest: null,
-        pendingcb: 0,
-        prefinished: false,
-        errorEmitted: false,
-        bufferedRequestCount: 0,
-        corkedRequestsFree: [Object] },
-     writable: true,
-     allowHalfOpen: true,
-     _bytesDispatched: 518,
-     _sockname: null,
-     _pendingData: null,
-     _pendingEncoding: '',
-     server: 
-      Server {
-        domain: null,
-        _events: [Object],
-        _eventsCount: 2,
-        _maxListeners: undefined,
-        _connections: 2,
-        _handle: [Object],
-        _usingSlaves: false,
-        _slaves: [],
-        _unref: false,
-        allowHalfOpen: true,
-        pauseOnConnect: false,
-        httpAllowHalfOpen: false,
-        timeout: 120000,
-        keepAliveTimeout: 5000,
-        _pendingResponseData: 0,
-        maxHeadersCount: null,
-        _connectionKey: '6::::4000',
-        [Symbol(asyncId)]: 8 },
-     _server: 
-      Server {
-        domain: null,
-        _events: [Object],
-        _eventsCount: 2,
-        _maxListeners: undefined,
-        _connections: 2,
-        _handle: [Object],
-        _usingSlaves: false,
-        _slaves: [],
-        _unref: false,
-        allowHalfOpen: true,
-        pauseOnConnect: false,
-        httpAllowHalfOpen: false,
-        timeout: 120000,
-        keepAliveTimeout: 5000,
-        _pendingResponseData: 0,
-        maxHeadersCount: null,
-        _connectionKey: '6::::4000',
-        [Symbol(asyncId)]: 8 },
-     _idleTimeout: 120000,
-     _idleNext: 
-      Socket {
-        connecting: false,
-        _hadError: false,
-        _handle: [Object],
-        _parent: null,
-        _host: null,
-        _readableState: [Object],
-        readable: true,
-        domain: null,
-        _events: [Object],
-        _eventsCount: 10,
-        _maxListeners: undefined,
-        _writableState: [Object],
-        writable: true,
-        allowHalfOpen: true,
-        _bytesDispatched: 0,
-        _sockname: null,
-        _pendingData: null,
-        _pendingEncoding: '',
-        server: [Object],
-        _server: [Object],
-        _idleTimeout: 120000,
-        _idleNext: [Object],
-        _idlePrev: [Circular],
-        _idleStart: 16534145,
-        _destroyed: false,
-        parser: [Object],
-        on: [Function: socketOnWrap],
-        _paused: false,
-        [Symbol(asyncId)]: 542,
-        [Symbol(bytesRead)]: 0,
-        [Symbol(asyncId)]: 543,
-        [Symbol(triggerAsyncId)]: 542 },
-     _idlePrev: 
-      TimersList {
-        _idleNext: [Circular],
-        _idlePrev: [Object],
-        _timer: [Object],
-        _unrefed: true,
-        msecs: 120000,
-        nextTick: false },
-     _idleStart: 16534608,
-     _destroyed: false,
-     parser: 
-      HTTPParser {
-        '0': [Function: parserOnHeaders],
-        '1': [Function: parserOnHeadersComplete],
-        '2': [Function: parserOnBody],
-        '3': [Function: parserOnMessageComplete],
-        '4': [Function: bound onParserExecute],
-        _headers: [],
-        _url: '',
-        _consumed: true,
-        socket: [Circular],
-        incoming: [Circular],
-        outgoing: null,
-        maxHeaderPairs: 2000,
-        onIncoming: [Function: bound parserOnIncoming] },
-     on: [Function: socketOnWrap],
-     _paused: false,
-     _httpMessage: 
-      ServerResponse {
-        domain: null,
-        _events: [Object],
-        _eventsCount: 2,
-        _maxListeners: undefined,
-        output: [],
-        outputEncodings: [],
-        outputCallbacks: [],
-        outputSize: 0,
-        writable: true,
-        _last: false,
-        upgrading: false,
-        chunkedEncoding: false,
-        shouldKeepAlive: true,
-        useChunkedEncodingByDefault: true,
-        sendDate: true,
-        _removedConnection: false,
-        _removedContLen: false,
-        _removedTE: false,
-        _contentLength: null,
-        _hasBody: true,
-        _trailer: '',
-        finished: false,
-        _headerSent: false,
-        socket: [Circular],
-        connection: [Circular],
-        _header: null,
-        _onPendingData: [Function: bound updateOutgoingData],
-        _sent100: false,
-        _expect_continue: false,
-        req: [Circular],
-        locals: {},
-        _startAt: undefined,
-        _startTime: undefined,
-        writeHead: [Function: writeHead],
-        __onFinished: [Object],
-        [Symbol(outHeadersKey)]: [Object] },
-     _peername: { address: '::1', family: 'IPv6', port: 63285 },
-     [Symbol(asyncId)]: 536,
-     [Symbol(bytesRead)]: 0,
-     [Symbol(asyncId)]: 537,
-     [Symbol(triggerAsyncId)]: 536 },
-  connection: 
-   Socket {
-     connecting: false,
-     _hadError: false,
-     _handle: 
-      TCP {
-        reading: true,
-        owner: [Circular],
-        onread: [Function: onread],
-        onconnection: null,
-        writeQueueSize: 0,
-        _consumed: true },
-     _parent: null,
-     _host: null,
-     _readableState: 
-      ReadableState {
-        objectMode: false,
-        highWaterMark: 16384,
-        buffer: [Object],
-        length: 0,
-        pipes: null,
-        pipesCount: 0,
-        flowing: true,
-        ended: false,
-        endEmitted: false,
-        reading: true,
-        sync: false,
-        needReadable: true,
-        emittedReadable: false,
-        readableListening: false,
-        resumeScheduled: false,
-        destroyed: false,
-        defaultEncoding: 'utf8',
-        awaitDrain: 0,
-        readingMore: false,
-        decoder: null,
-        encoding: null },
-     readable: true,
-     domain: null,
-     _events: 
-      { end: [Array],
-        finish: [Function: onSocketFinish],
-        _socketEnd: [Function: onSocketEnd],
-        drain: [Array],
-        timeout: [Function: socketOnTimeout],
-        data: [Function: bound socketOnData],
-        error: [Array],
-        close: [Array],
-        resume: [Function: onSocketResume],
-        pause: [Function: onSocketPause] },
-     _eventsCount: 10,
-     _maxListeners: undefined,
-     _writableState: 
-      WritableState {
-        objectMode: false,
-        highWaterMark: 16384,
-        finalCalled: false,
-        needDrain: false,
-        ending: false,
-        ended: false,
-        finished: false,
-        destroyed: false,
-        decodeStrings: false,
-        defaultEncoding: 'utf8',
-        length: 0,
-        writing: false,
-        corked: 0,
-        sync: false,
-        bufferProcessing: false,
-        onwrite: [Function: bound onwrite],
-        writecb: null,
-        writelen: 0,
-        bufferedRequest: null,
-        lastBufferedRequest: null,
-        pendingcb: 0,
-        prefinished: false,
-        errorEmitted: false,
-        bufferedRequestCount: 0,
-        corkedRequestsFree: [Object] },
-     writable: true,
-     allowHalfOpen: true,
-     _bytesDispatched: 518,
-     _sockname: null,
-     _pendingData: null,
-     _pendingEncoding: '',
-     server: 
-      Server {
-        domain: null,
-        _events: [Object],
-        _eventsCount: 2,
-        _maxListeners: undefined,
-        _connections: 2,
-        _handle: [Object],
-        _usingSlaves: false,
-        _slaves: [],
-        _unref: false,
-        allowHalfOpen: true,
-        pauseOnConnect: false,
-        httpAllowHalfOpen: false,
-        timeout: 120000,
-        keepAliveTimeout: 5000,
-        _pendingResponseData: 0,
-        maxHeadersCount: null,
-        _connectionKey: '6::::4000',
-        [Symbol(asyncId)]: 8 },
-     _server: 
-      Server {
-        domain: null,
-        _events: [Object],
-        _eventsCount: 2,
-        _maxListeners: undefined,
-        _connections: 2,
-        _handle: [Object],
-        _usingSlaves: false,
-        _slaves: [],
-        _unref: false,
-        allowHalfOpen: true,
-        pauseOnConnect: false,
-        httpAllowHalfOpen: false,
-        timeout: 120000,
-        keepAliveTimeout: 5000,
-        _pendingResponseData: 0,
-        maxHeadersCount: null,
-        _connectionKey: '6::::4000',
-        [Symbol(asyncId)]: 8 },
-     _idleTimeout: 120000,
-     _idleNext: 
-      Socket {
-        connecting: false,
-        _hadError: false,
-        _handle: [Object],
-        _parent: null,
-        _host: null,
-        _readableState: [Object],
-        readable: true,
-        domain: null,
-        _events: [Object],
-        _eventsCount: 10,
-        _maxListeners: undefined,
-        _writableState: [Object],
-        writable: true,
-        allowHalfOpen: true,
-        _bytesDispatched: 0,
-        _sockname: null,
-        _pendingData: null,
-        _pendingEncoding: '',
-        server: [Object],
-        _server: [Object],
-        _idleTimeout: 120000,
-        _idleNext: [Object],
-        _idlePrev: [Circular],
-        _idleStart: 16534145,
-        _destroyed: false,
-        parser: [Object],
-        on: [Function: socketOnWrap],
-        _paused: false,
-        [Symbol(asyncId)]: 542,
-        [Symbol(bytesRead)]: 0,
-        [Symbol(asyncId)]: 543,
-        [Symbol(triggerAsyncId)]: 542 },
-     _idlePrev: 
-      TimersList {
-        _idleNext: [Circular],
-        _idlePrev: [Object],
-        _timer: [Object],
-        _unrefed: true,
-        msecs: 120000,
-        nextTick: false },
-     _idleStart: 16534608,
-     _destroyed: false,
-     parser: 
-      HTTPParser {
-        '0': [Function: parserOnHeaders],
-        '1': [Function: parserOnHeadersComplete],
-        '2': [Function: parserOnBody],
-        '3': [Function: parserOnMessageComplete],
-        '4': [Function: bound onParserExecute],
-        _headers: [],
-        _url: '',
-        _consumed: true,
-        socket: [Circular],
-        incoming: [Circular],
-        outgoing: null,
-        maxHeaderPairs: 2000,
-        onIncoming: [Function: bound parserOnIncoming] },
-     on: [Function: socketOnWrap],
-     _paused: false,
-     _httpMessage: 
-      ServerResponse {
-        domain: null,
-        _events: [Object],
-        _eventsCount: 2,
-        _maxListeners: undefined,
-        output: [],
-        outputEncodings: [],
-        outputCallbacks: [],
-        outputSize: 0,
-        writable: true,
-        _last: false,
-        upgrading: false,
-        chunkedEncoding: false,
-        shouldKeepAlive: true,
-        useChunkedEncodingByDefault: true,
-        sendDate: true,
-        _removedConnection: false,
-        _removedContLen: false,
-        _removedTE: false,
-        _contentLength: null,
-        _hasBody: true,
-        _trailer: '',
-        finished: false,
-        _headerSent: false,
-        socket: [Circular],
-        connection: [Circular],
-        _header: null,
-        _onPendingData: [Function: bound updateOutgoingData],
-        _sent100: false,
-        _expect_continue: false,
-        req: [Circular],
-        locals: {},
-        _startAt: undefined,
-        _startTime: undefined,
-        writeHead: [Function: writeHead],
-        __onFinished: [Object],
-        [Symbol(outHeadersKey)]: [Object] },
-     _peername: { address: '::1', family: 'IPv6', port: 63285 },
-     [Symbol(asyncId)]: 536,
-     [Symbol(bytesRead)]: 0,
-     [Symbol(asyncId)]: 537,
-     [Symbol(triggerAsyncId)]: 536 },
-  httpVersionMajor: 1,
-  httpVersionMinor: 1,
-  httpVersion: '1.1',
-  complete: true,
-  headers: 
-   { host: 'localhost:4000',
-     connection: 'keep-alive',
-     pragma: 'no-cache',
-     'cache-control': 'no-cache',
-     'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
-     accept: 'image/webp,image/apng,image/*,*/*;q=0.8',
-     referer: 'http://localhost:4000/',
-     'accept-encoding': 'gzip, deflate, br',
-     'accept-language': 'en,ko-KR;q=0.9,ko;q=0.8',
-     cookie: '_xsrf=2|8021c097|e748bc4292eb77a8d970d6e7e730f7ce|1552469256; username-localhost-8888="2|1:0|10:1553754183|23:username-localhost-8888|44:YzgwYTZjNTMxNzdhNDc5ZDhkNmYwYzg1ZmRlOWE2ZTY=|c9abfa8d52093d549481a5a88d3803fec94493fab4fd47485ea837256082269e"' },
-  rawHeaders: 
-   [ 'Host',
-     'localhost:4000',
-     'Connection',
-     'keep-alive',
-     'Pragma',
-     'no-cache',
-     'Cache-Control',
-     'no-cache',
-     'User-Agent',
-     'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
-     'Accept',
-     'image/webp,image/apng,image/*,*/*;q=0.8',
-     'Referer',
-     'http://localhost:4000/',
-     'Accept-Encoding',
-     'gzip, deflate, br',
-     'Accept-Language',
-     'en,ko-KR;q=0.9,ko;q=0.8',
-     'Cookie',
-     '_xsrf=2|8021c097|e748bc4292eb77a8d970d6e7e730f7ce|1552469256; username-localhost-8888="2|1:0|10:1553754183|23:username-localhost-8888|44:YzgwYTZjNTMxNzdhNDc5ZDhkNmYwYzg1ZmRlOWE2ZTY=|c9abfa8d52093d549481a5a88d3803fec94493fab4fd47485ea837256082269e"' ],
-  trailers: {},
-  rawTrailers: [],
-  upgrade: false,
-  url: '/favicon.ico',
-  method: 'GET',
-  statusCode: null,
-  statusMessage: null,
-  client: 
-   Socket {
-     connecting: false,
-     _hadError: false,
-     _handle: 
-      TCP {
-        reading: true,
-        owner: [Circular],
-        onread: [Function: onread],
-        onconnection: null,
-        writeQueueSize: 0,
-        _consumed: true },
-     _parent: null,
-     _host: null,
-     _readableState: 
-      ReadableState {
-        objectMode: false,
-        highWaterMark: 16384,
-        buffer: [Object],
-        length: 0,
-        pipes: null,
-        pipesCount: 0,
-        flowing: true,
-        ended: false,
-        endEmitted: false,
-        reading: true,
-        sync: false,
-        needReadable: true,
-        emittedReadable: false,
-        readableListening: false,
-        resumeScheduled: false,
-        destroyed: false,
-        defaultEncoding: 'utf8',
-        awaitDrain: 0,
-        readingMore: false,
-        decoder: null,
-        encoding: null },
-     readable: true,
-     domain: null,
-     _events: 
-      { end: [Array],
-        finish: [Function: onSocketFinish],
-        _socketEnd: [Function: onSocketEnd],
-        drain: [Array],
-        timeout: [Function: socketOnTimeout],
-        data: [Function: bound socketOnData],
-        error: [Array],
-        close: [Array],
-        resume: [Function: onSocketResume],
-        pause: [Function: onSocketPause] },
-     _eventsCount: 10,
-     _maxListeners: undefined,
-     _writableState: 
-      WritableState {
-        objectMode: false,
-        highWaterMark: 16384,
-        finalCalled: false,
-        needDrain: false,
-        ending: false,
-        ended: false,
-        finished: false,
-        destroyed: false,
-        decodeStrings: false,
-        defaultEncoding: 'utf8',
-        length: 0,
-        writing: false,
-        corked: 0,
-        sync: false,
-        bufferProcessing: false,
-        onwrite: [Function: bound onwrite],
-        writecb: null,
-        writelen: 0,
-        bufferedRequest: null,
-        lastBufferedRequest: null,
-        pendingcb: 0,
-        prefinished: false,
-        errorEmitted: false,
-        bufferedRequestCount: 0,
-        corkedRequestsFree: [Object] },
-     writable: true,
-     allowHalfOpen: true,
-     _bytesDispatched: 518,
-     _sockname: null,
-     _pendingData: null,
-     _pendingEncoding: '',
-     server: 
-      Server {
-        domain: null,
-        _events: [Object],
-        _eventsCount: 2,
-        _maxListeners: undefined,
-        _connections: 2,
-        _handle: [Object],
-        _usingSlaves: false,
-        _slaves: [],
-        _unref: false,
-        allowHalfOpen: true,
-        pauseOnConnect: false,
-        httpAllowHalfOpen: false,
-        timeout: 120000,
-        keepAliveTimeout: 5000,
-        _pendingResponseData: 0,
-        maxHeadersCount: null,
-        _connectionKey: '6::::4000',
-        [Symbol(asyncId)]: 8 },
-     _server: 
-      Server {
-        domain: null,
-        _events: [Object],
-        _eventsCount: 2,
-        _maxListeners: undefined,
-        _connections: 2,
-        _handle: [Object],
-        _usingSlaves: false,
-        _slaves: [],
-        _unref: false,
-        allowHalfOpen: true,
-        pauseOnConnect: false,
-        httpAllowHalfOpen: false,
-        timeout: 120000,
-        keepAliveTimeout: 5000,
-        _pendingResponseData: 0,
-        maxHeadersCount: null,
-        _connectionKey: '6::::4000',
-        [Symbol(asyncId)]: 8 },
-     _idleTimeout: 120000,
-     _idleNext: 
-      Socket {
-        connecting: false,
-        _hadError: false,
-        _handle: [Object],
-        _parent: null,
-        _host: null,
-        _readableState: [Object],
-        readable: true,
-        domain: null,
-        _events: [Object],
-        _eventsCount: 10,
-        _maxListeners: undefined,
-        _writableState: [Object],
-        writable: true,
-        allowHalfOpen: true,
-        _bytesDispatched: 0,
-        _sockname: null,
-        _pendingData: null,
-        _pendingEncoding: '',
-        server: [Object],
-        _server: [Object],
-        _idleTimeout: 120000,
-        _idleNext: [Object],
-        _idlePrev: [Circular],
-        _idleStart: 16534145,
-        _destroyed: false,
-        parser: [Object],
-        on: [Function: socketOnWrap],
-        _paused: false,
-        [Symbol(asyncId)]: 542,
-        [Symbol(bytesRead)]: 0,
-        [Symbol(asyncId)]: 543,
-        [Symbol(triggerAsyncId)]: 542 },
-     _idlePrev: 
-      TimersList {
-        _idleNext: [Circular],
-        _idlePrev: [Object],
-        _timer: [Object],
-        _unrefed: true,
-        msecs: 120000,
-        nextTick: false },
-     _idleStart: 16534608,
-     _destroyed: false,
-     parser: 
-      HTTPParser {
-        '0': [Function: parserOnHeaders],
-        '1': [Function: parserOnHeadersComplete],
-        '2': [Function: parserOnBody],
-        '3': [Function: parserOnMessageComplete],
-        '4': [Function: bound onParserExecute],
-        _headers: [],
-        _url: '',
-        _consumed: true,
-        socket: [Circular],
-        incoming: [Circular],
-        outgoing: null,
-        maxHeaderPairs: 2000,
-        onIncoming: [Function: bound parserOnIncoming] },
-     on: [Function: socketOnWrap],
-     _paused: false,
-     _httpMessage: 
-      ServerResponse {
-        domain: null,
-        _events: [Object],
-        _eventsCount: 2,
-        _maxListeners: undefined,
-        output: [],
-        outputEncodings: [],
-        outputCallbacks: [],
-        outputSize: 0,
-        writable: true,
-        _last: false,
-        upgrading: false,
-        chunkedEncoding: false,
-        shouldKeepAlive: true,
-        useChunkedEncodingByDefault: true,
-        sendDate: true,
-        _removedConnection: false,
-        _removedContLen: false,
-        _removedTE: false,
-        _contentLength: null,
-        _hasBody: true,
-        _trailer: '',
-        finished: false,
-        _headerSent: false,
-        socket: [Circular],
-        connection: [Circular],
-        _header: null,
-        _onPendingData: [Function: bound updateOutgoingData],
-        _sent100: false,
-        _expect_continue: false,
-        req: [Circular],
-        locals: {},
-        _startAt: undefined,
-        _startTime: undefined,
-        writeHead: [Function: writeHead],
-        __onFinished: [Object],
-        [Symbol(outHeadersKey)]: [Object] },
-     _peername: { address: '::1', family: 'IPv6', port: 63285 },
-     [Symbol(asyncId)]: 536,
-     [Symbol(bytesRead)]: 0,
-     [Symbol(asyncId)]: 537,
-     [Symbol(triggerAsyncId)]: 536 },
-  _consuming: false,
-  _dumped: false,
-  next: [Function: next],
-  baseUrl: '',
-  originalUrl: '/favicon.ico',
-  _parsedUrl: 
-   Url {
-     protocol: null,
-     slashes: null,
-     auth: null,
-     host: null,
-     port: null,
-     hostname: null,
-     hash: null,
-     search: null,
-     query: null,
-     pathname: '/favicon.ico',
-     path: '/favicon.ico',
-     href: '/favicon.ico',
-     _raw: '/favicon.ico' },
-  params: {},
-  query: {},
-  res: 
-   ServerResponse {
-     domain: null,
-     _events: { finish: [Array], end: [Function: onevent] },
-     _eventsCount: 2,
-     _maxListeners: undefined,
-     output: [],
-     outputEncodings: [],
-     outputCallbacks: [],
-     outputSize: 0,
-     writable: true,
-     _last: false,
-     upgrading: false,
-     chunkedEncoding: false,
-     shouldKeepAlive: true,
-     useChunkedEncodingByDefault: true,
-     sendDate: true,
-     _removedConnection: false,
-     _removedContLen: false,
-     _removedTE: false,
-     _contentLength: null,
-     _hasBody: true,
-     _trailer: '',
-     finished: false,
-     _headerSent: false,
-     socket: 
-      Socket {
-        connecting: false,
-        _hadError: false,
-        _handle: [Object],
-        _parent: null,
-        _host: null,
-        _readableState: [Object],
-        readable: true,
-        domain: null,
-        _events: [Object],
-        _eventsCount: 10,
-        _maxListeners: undefined,
-        _writableState: [Object],
-        writable: true,
-        allowHalfOpen: true,
-        _bytesDispatched: 518,
-        _sockname: null,
-        _pendingData: null,
-        _pendingEncoding: '',
-        server: [Object],
-        _server: [Object],
-        _idleTimeout: 120000,
-        _idleNext: [Object],
-        _idlePrev: [Object],
-        _idleStart: 16534608,
-        _destroyed: false,
-        parser: [Object],
-        on: [Function: socketOnWrap],
-        _paused: false,
-        _httpMessage: [Circular],
-        _peername: [Object],
-        [Symbol(asyncId)]: 536,
-        [Symbol(bytesRead)]: 0,
-        [Symbol(asyncId)]: 537,
-        [Symbol(triggerAsyncId)]: 536 },
-     connection: 
-      Socket {
-        connecting: false,
-        _hadError: false,
-        _handle: [Object],
-        _parent: null,
-        _host: null,
-        _readableState: [Object],
-        readable: true,
-        domain: null,
-        _events: [Object],
-        _eventsCount: 10,
-        _maxListeners: undefined,
-        _writableState: [Object],
-        writable: true,
-        allowHalfOpen: true,
-        _bytesDispatched: 518,
-        _sockname: null,
-        _pendingData: null,
-        _pendingEncoding: '',
-        server: [Object],
-        _server: [Object],
-        _idleTimeout: 120000,
-        _idleNext: [Object],
-        _idlePrev: [Object],
-        _idleStart: 16534608,
-        _destroyed: false,
-        parser: [Object],
-        on: [Function: socketOnWrap],
-        _paused: false,
-        _httpMessage: [Circular],
-        _peername: [Object],
-        [Symbol(asyncId)]: 536,
-        [Symbol(bytesRead)]: 0,
-        [Symbol(asyncId)]: 537,
-        [Symbol(triggerAsyncId)]: 536 },
-     _header: null,
-     _onPendingData: [Function: bound updateOutgoingData],
-     _sent100: false,
-     _expect_continue: false,
-     req: [Circular],
-     locals: {},
-     _startAt: undefined,
-     _startTime: undefined,
-     writeHead: [Function: writeHead],
-     __onFinished: { [Function: listener] queue: [Array] },
-     [Symbol(outHeadersKey)]: 
-      { 'x-dns-prefetch-control': [Array],
-        'x-frame-options': [Array],
-        'strict-transport-security': [Array],
-        'x-download-options': [Array],
-        'x-content-type-options': [Array],
-        'x-xss-protection': [Array],
-        'access-control-allow-origin': [Array] } },
-  body: {},
-  _startAt: [ 746768, 74606536 ],
-  _startTime: 2019-04-09T01:32:27.891Z,
-  _remoteAddress: '::1',
-  _parsedOriginalUrl: 
-   Url {
-     protocol: null,
-     slashes: null,
-     auth: null,
-     host: null,
-     port: null,
-     hostname: null,
-     hash: null,
-     search: null,
-     query: null,
-     pathname: '/favicon.ico',
-     path: '/favicon.ico',
-     href: '/favicon.ico',
-     _raw: '/favicon.ico' } }
-[2019-04-09T10:32:34.711] [ERROR] init - IncomingMessage {
-  _readableState: 
-   ReadableState {
-     objectMode: false,
-     highWaterMark: 16384,
-     buffer: BufferList { head: null, tail: null, length: 0 },
-     length: 0,
-     pipes: null,
-     pipesCount: 0,
-     flowing: null,
-     ended: true,
-     endEmitted: false,
-     reading: false,
-     sync: true,
-     needReadable: false,
-     emittedReadable: true,
-     readableListening: false,
-     resumeScheduled: false,
-     destroyed: false,
-     defaultEncoding: 'utf8',
-     awaitDrain: 0,
-     readingMore: true,
-     decoder: null,
-     encoding: null },
-  readable: true,
-  domain: null,
-  _events: {},
-  _eventsCount: 0,
-  _maxListeners: undefined,
-  socket: 
-   Socket {
-     connecting: false,
-     _hadError: false,
-     _handle: 
-      TCP {
-        reading: true,
-        owner: [Circular],
-        onread: [Function: onread],
-        onconnection: null,
-        writeQueueSize: 0,
-        _consumed: true },
-     _parent: null,
-     _host: null,
-     _readableState: 
-      ReadableState {
-        objectMode: false,
-        highWaterMark: 16384,
-        buffer: [Object],
-        length: 0,
-        pipes: null,
-        pipesCount: 0,
-        flowing: true,
-        ended: false,
-        endEmitted: false,
-        reading: true,
-        sync: false,
-        needReadable: true,
-        emittedReadable: false,
-        readableListening: false,
-        resumeScheduled: false,
-        destroyed: false,
-        defaultEncoding: 'utf8',
-        awaitDrain: 0,
-        readingMore: false,
-        decoder: null,
-        encoding: null },
-     readable: true,
-     domain: null,
-     _events: 
-      { end: [Array],
-        finish: [Function: onSocketFinish],
-        _socketEnd: [Function: onSocketEnd],
-        drain: [Array],
-        timeout: [Function: socketOnTimeout],
-        data: [Function: bound socketOnData],
-        error: [Array],
-        close: [Array],
-        resume: [Function: onSocketResume],
-        pause: [Function: onSocketPause] },
-     _eventsCount: 10,
-     _maxListeners: undefined,
-     _writableState: 
-      WritableState {
-        objectMode: false,
-        highWaterMark: 16384,
-        finalCalled: false,
-        needDrain: false,
-        ending: false,
-        ended: false,
-        finished: false,
-        destroyed: false,
-        decodeStrings: false,
-        defaultEncoding: 'utf8',
-        length: 0,
-        writing: false,
-        corked: 0,
-        sync: false,
-        bufferProcessing: false,
-        onwrite: [Function: bound onwrite],
-        writecb: null,
-        writelen: 0,
-        bufferedRequest: null,
-        lastBufferedRequest: null,
-        pendingcb: 0,
-        prefinished: false,
-        errorEmitted: false,
-        bufferedRequestCount: 0,
-        corkedRequestsFree: [Object] },
-     writable: true,
-     allowHalfOpen: true,
-     _bytesDispatched: 518,
-     _sockname: null,
-     _pendingData: null,
-     _pendingEncoding: '',
-     server: 
-      Server {
-        domain: null,
-        _events: [Object],
-        _eventsCount: 2,
-        _maxListeners: undefined,
-        _connections: 2,
-        _handle: [Object],
-        _usingSlaves: false,
-        _slaves: [],
-        _unref: false,
-        allowHalfOpen: true,
-        pauseOnConnect: false,
-        httpAllowHalfOpen: false,
-        timeout: 120000,
-        keepAliveTimeout: 5000,
-        _pendingResponseData: 0,
-        maxHeadersCount: null,
-        _connectionKey: '6::::4000',
-        [Symbol(asyncId)]: 8 },
-     _server: 
-      Server {
-        domain: null,
-        _events: [Object],
-        _eventsCount: 2,
-        _maxListeners: undefined,
-        _connections: 2,
-        _handle: [Object],
-        _usingSlaves: false,
-        _slaves: [],
-        _unref: false,
-        allowHalfOpen: true,
-        pauseOnConnect: false,
-        httpAllowHalfOpen: false,
-        timeout: 120000,
-        keepAliveTimeout: 5000,
-        _pendingResponseData: 0,
-        maxHeadersCount: null,
-        _connectionKey: '6::::4000',
-        [Symbol(asyncId)]: 8 },
-     _idleTimeout: 120000,
-     _idleNext: 
-      Socket {
-        connecting: false,
-        _hadError: false,
-        _handle: [Object],
-        _parent: null,
-        _host: null,
-        _readableState: [Object],
-        readable: true,
-        domain: null,
-        _events: [Object],
-        _eventsCount: 10,
-        _maxListeners: undefined,
-        _writableState: [Object],
-        writable: true,
-        allowHalfOpen: true,
-        _bytesDispatched: 0,
-        _sockname: null,
-        _pendingData: null,
-        _pendingEncoding: '',
-        server: [Object],
-        _server: [Object],
-        _idleTimeout: 120000,
-        _idleNext: [Object],
-        _idlePrev: [Circular],
-        _idleStart: 16541289,
-        _destroyed: false,
-        parser: [Object],
-        on: [Function: socketOnWrap],
-        _paused: false,
-        [Symbol(asyncId)]: 584,
-        [Symbol(bytesRead)]: 0,
-        [Symbol(asyncId)]: 585,
-        [Symbol(triggerAsyncId)]: 584 },
-     _idlePrev: 
-      TimersList {
-        _idleNext: [Circular],
-        _idlePrev: [Object],
-        _timer: [Object],
-        _unrefed: true,
-        msecs: 120000,
-        nextTick: false },
-     _idleStart: 16541428,
-     _destroyed: false,
-     parser: 
-      HTTPParser {
-        '0': [Function: parserOnHeaders],
-        '1': [Function: parserOnHeadersComplete],
-        '2': [Function: parserOnBody],
-        '3': [Function: parserOnMessageComplete],
-        '4': [Function: bound onParserExecute],
-        _headers: [],
-        _url: '',
-        _consumed: true,
-        socket: [Circular],
-        incoming: [Circular],
-        outgoing: null,
-        maxHeaderPairs: 2000,
-        onIncoming: [Function: bound parserOnIncoming] },
-     on: [Function: socketOnWrap],
-     _paused: false,
-     _httpMessage: 
-      ServerResponse {
-        domain: null,
-        _events: [Object],
-        _eventsCount: 2,
-        _maxListeners: undefined,
-        output: [],
-        outputEncodings: [],
-        outputCallbacks: [],
-        outputSize: 0,
-        writable: true,
-        _last: false,
-        upgrading: false,
-        chunkedEncoding: false,
-        shouldKeepAlive: true,
-        useChunkedEncodingByDefault: true,
-        sendDate: true,
-        _removedConnection: false,
-        _removedContLen: false,
-        _removedTE: false,
-        _contentLength: null,
-        _hasBody: true,
-        _trailer: '',
-        finished: false,
-        _headerSent: false,
-        socket: [Circular],
-        connection: [Circular],
-        _header: null,
-        _onPendingData: [Function: bound updateOutgoingData],
-        _sent100: false,
-        _expect_continue: false,
-        req: [Circular],
-        locals: {},
-        _startAt: undefined,
-        _startTime: undefined,
-        writeHead: [Function: writeHead],
-        __onFinished: [Object],
-        [Symbol(outHeadersKey)]: [Object] },
-     _peername: { address: '::1', family: 'IPv6', port: 63286 },
-     [Symbol(asyncId)]: 542,
-     [Symbol(bytesRead)]: 0,
-     [Symbol(asyncId)]: 543,
-     [Symbol(triggerAsyncId)]: 542 },
-  connection: 
-   Socket {
-     connecting: false,
-     _hadError: false,
-     _handle: 
-      TCP {
-        reading: true,
-        owner: [Circular],
-        onread: [Function: onread],
-        onconnection: null,
-        writeQueueSize: 0,
-        _consumed: true },
-     _parent: null,
-     _host: null,
-     _readableState: 
-      ReadableState {
-        objectMode: false,
-        highWaterMark: 16384,
-        buffer: [Object],
-        length: 0,
-        pipes: null,
-        pipesCount: 0,
-        flowing: true,
-        ended: false,
-        endEmitted: false,
-        reading: true,
-        sync: false,
-        needReadable: true,
-        emittedReadable: false,
-        readableListening: false,
-        resumeScheduled: false,
-        destroyed: false,
-        defaultEncoding: 'utf8',
-        awaitDrain: 0,
-        readingMore: false,
-        decoder: null,
-        encoding: null },
-     readable: true,
-     domain: null,
-     _events: 
-      { end: [Array],
-        finish: [Function: onSocketFinish],
-        _socketEnd: [Function: onSocketEnd],
-        drain: [Array],
-        timeout: [Function: socketOnTimeout],
-        data: [Function: bound socketOnData],
-        error: [Array],
-        close: [Array],
-        resume: [Function: onSocketResume],
-        pause: [Function: onSocketPause] },
-     _eventsCount: 10,
-     _maxListeners: undefined,
-     _writableState: 
-      WritableState {
-        objectMode: false,
-        highWaterMark: 16384,
-        finalCalled: false,
-        needDrain: false,
-        ending: false,
-        ended: false,
-        finished: false,
-        destroyed: false,
-        decodeStrings: false,
-        defaultEncoding: 'utf8',
-        length: 0,
-        writing: false,
-        corked: 0,
-        sync: false,
-        bufferProcessing: false,
-        onwrite: [Function: bound onwrite],
-        writecb: null,
-        writelen: 0,
-        bufferedRequest: null,
-        lastBufferedRequest: null,
-        pendingcb: 0,
-        prefinished: false,
-        errorEmitted: false,
-        bufferedRequestCount: 0,
-        corkedRequestsFree: [Object] },
-     writable: true,
-     allowHalfOpen: true,
-     _bytesDispatched: 518,
-     _sockname: null,
-     _pendingData: null,
-     _pendingEncoding: '',
-     server: 
-      Server {
-        domain: null,
-        _events: [Object],
-        _eventsCount: 2,
-        _maxListeners: undefined,
-        _connections: 2,
-        _handle: [Object],
-        _usingSlaves: false,
-        _slaves: [],
-        _unref: false,
-        allowHalfOpen: true,
-        pauseOnConnect: false,
-        httpAllowHalfOpen: false,
-        timeout: 120000,
-        keepAliveTimeout: 5000,
-        _pendingResponseData: 0,
-        maxHeadersCount: null,
-        _connectionKey: '6::::4000',
-        [Symbol(asyncId)]: 8 },
-     _server: 
-      Server {
-        domain: null,
-        _events: [Object],
-        _eventsCount: 2,
-        _maxListeners: undefined,
-        _connections: 2,
-        _handle: [Object],
-        _usingSlaves: false,
-        _slaves: [],
-        _unref: false,
-        allowHalfOpen: true,
-        pauseOnConnect: false,
-        httpAllowHalfOpen: false,
-        timeout: 120000,
-        keepAliveTimeout: 5000,
-        _pendingResponseData: 0,
-        maxHeadersCount: null,
-        _connectionKey: '6::::4000',
-        [Symbol(asyncId)]: 8 },
-     _idleTimeout: 120000,
-     _idleNext: 
-      Socket {
-        connecting: false,
-        _hadError: false,
-        _handle: [Object],
-        _parent: null,
-        _host: null,
-        _readableState: [Object],
-        readable: true,
-        domain: null,
-        _events: [Object],
-        _eventsCount: 10,
-        _maxListeners: undefined,
-        _writableState: [Object],
-        writable: true,
-        allowHalfOpen: true,
-        _bytesDispatched: 0,
-        _sockname: null,
-        _pendingData: null,
-        _pendingEncoding: '',
-        server: [Object],
-        _server: [Object],
-        _idleTimeout: 120000,
-        _idleNext: [Object],
-        _idlePrev: [Circular],
-        _idleStart: 16541289,
-        _destroyed: false,
-        parser: [Object],
-        on: [Function: socketOnWrap],
-        _paused: false,
-        [Symbol(asyncId)]: 584,
-        [Symbol(bytesRead)]: 0,
-        [Symbol(asyncId)]: 585,
-        [Symbol(triggerAsyncId)]: 584 },
-     _idlePrev: 
-      TimersList {
-        _idleNext: [Circular],
-        _idlePrev: [Object],
-        _timer: [Object],
-        _unrefed: true,
-        msecs: 120000,
-        nextTick: false },
-     _idleStart: 16541428,
-     _destroyed: false,
-     parser: 
-      HTTPParser {
-        '0': [Function: parserOnHeaders],
-        '1': [Function: parserOnHeadersComplete],
-        '2': [Function: parserOnBody],
-        '3': [Function: parserOnMessageComplete],
-        '4': [Function: bound onParserExecute],
-        _headers: [],
-        _url: '',
-        _consumed: true,
-        socket: [Circular],
-        incoming: [Circular],
-        outgoing: null,
-        maxHeaderPairs: 2000,
-        onIncoming: [Function: bound parserOnIncoming] },
-     on: [Function: socketOnWrap],
-     _paused: false,
-     _httpMessage: 
-      ServerResponse {
-        domain: null,
-        _events: [Object],
-        _eventsCount: 2,
-        _maxListeners: undefined,
-        output: [],
-        outputEncodings: [],
-        outputCallbacks: [],
-        outputSize: 0,
-        writable: true,
-        _last: false,
-        upgrading: false,
-        chunkedEncoding: false,
-        shouldKeepAlive: true,
-        useChunkedEncodingByDefault: true,
-        sendDate: true,
-        _removedConnection: false,
-        _removedContLen: false,
-        _removedTE: false,
-        _contentLength: null,
-        _hasBody: true,
-        _trailer: '',
-        finished: false,
-        _headerSent: false,
-        socket: [Circular],
-        connection: [Circular],
-        _header: null,
-        _onPendingData: [Function: bound updateOutgoingData],
-        _sent100: false,
-        _expect_continue: false,
-        req: [Circular],
-        locals: {},
-        _startAt: undefined,
-        _startTime: undefined,
-        writeHead: [Function: writeHead],
-        __onFinished: [Object],
-        [Symbol(outHeadersKey)]: [Object] },
-     _peername: { address: '::1', family: 'IPv6', port: 63286 },
-     [Symbol(asyncId)]: 542,
-     [Symbol(bytesRead)]: 0,
-     [Symbol(asyncId)]: 543,
-     [Symbol(triggerAsyncId)]: 542 },
-  httpVersionMajor: 1,
-  httpVersionMinor: 1,
-  httpVersion: '1.1',
-  complete: true,
-  headers: 
-   { host: 'localhost:4000',
-     connection: 'keep-alive',
-     pragma: 'no-cache',
-     'cache-control': 'no-cache',
-     'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
-     accept: 'image/webp,image/apng,image/*,*/*;q=0.8',
-     referer: 'http://localhost:4000/',
-     'accept-encoding': 'gzip, deflate, br',
-     'accept-language': 'en,ko-KR;q=0.9,ko;q=0.8',
-     cookie: '_xsrf=2|8021c097|e748bc4292eb77a8d970d6e7e730f7ce|1552469256; username-localhost-8888="2|1:0|10:1553754183|23:username-localhost-8888|44:YzgwYTZjNTMxNzdhNDc5ZDhkNmYwYzg1ZmRlOWE2ZTY=|c9abfa8d52093d549481a5a88d3803fec94493fab4fd47485ea837256082269e"' },
-  rawHeaders: 
-   [ 'Host',
-     'localhost:4000',
-     'Connection',
-     'keep-alive',
-     'Pragma',
-     'no-cache',
-     'Cache-Control',
-     'no-cache',
-     'User-Agent',
-     'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
-     'Accept',
-     'image/webp,image/apng,image/*,*/*;q=0.8',
-     'Referer',
-     'http://localhost:4000/',
-     'Accept-Encoding',
-     'gzip, deflate, br',
-     'Accept-Language',
-     'en,ko-KR;q=0.9,ko;q=0.8',
-     'Cookie',
-     '_xsrf=2|8021c097|e748bc4292eb77a8d970d6e7e730f7ce|1552469256; username-localhost-8888="2|1:0|10:1553754183|23:username-localhost-8888|44:YzgwYTZjNTMxNzdhNDc5ZDhkNmYwYzg1ZmRlOWE2ZTY=|c9abfa8d52093d549481a5a88d3803fec94493fab4fd47485ea837256082269e"' ],
-  trailers: {},
-  rawTrailers: [],
-  upgrade: false,
-  url: '/favicon.ico',
-  method: 'GET',
-  statusCode: null,
-  statusMessage: null,
-  client: 
-   Socket {
-     connecting: false,
-     _hadError: false,
-     _handle: 
-      TCP {
-        reading: true,
-        owner: [Circular],
-        onread: [Function: onread],
-        onconnection: null,
-        writeQueueSize: 0,
-        _consumed: true },
-     _parent: null,
-     _host: null,
-     _readableState: 
-      ReadableState {
-        objectMode: false,
-        highWaterMark: 16384,
-        buffer: [Object],
-        length: 0,
-        pipes: null,
-        pipesCount: 0,
-        flowing: true,
-        ended: false,
-        endEmitted: false,
-        reading: true,
-        sync: false,
-        needReadable: true,
-        emittedReadable: false,
-        readableListening: false,
-        resumeScheduled: false,
-        destroyed: false,
-        defaultEncoding: 'utf8',
-        awaitDrain: 0,
-        readingMore: false,
-        decoder: null,
-        encoding: null },
-     readable: true,
-     domain: null,
-     _events: 
-      { end: [Array],
-        finish: [Function: onSocketFinish],
-        _socketEnd: [Function: onSocketEnd],
-        drain: [Array],
-        timeout: [Function: socketOnTimeout],
-        data: [Function: bound socketOnData],
-        error: [Array],
-        close: [Array],
-        resume: [Function: onSocketResume],
-        pause: [Function: onSocketPause] },
-     _eventsCount: 10,
-     _maxListeners: undefined,
-     _writableState: 
-      WritableState {
-        objectMode: false,
-        highWaterMark: 16384,
-        finalCalled: false,
-        needDrain: false,
-        ending: false,
-        ended: false,
-        finished: false,
-        destroyed: false,
-        decodeStrings: false,
-        defaultEncoding: 'utf8',
-        length: 0,
-        writing: false,
-        corked: 0,
-        sync: false,
-        bufferProcessing: false,
-        onwrite: [Function: bound onwrite],
-        writecb: null,
-        writelen: 0,
-        bufferedRequest: null,
-        lastBufferedRequest: null,
-        pendingcb: 0,
-        prefinished: false,
-        errorEmitted: false,
-        bufferedRequestCount: 0,
-        corkedRequestsFree: [Object] },
-     writable: true,
-     allowHalfOpen: true,
-     _bytesDispatched: 518,
-     _sockname: null,
-     _pendingData: null,
-     _pendingEncoding: '',
-     server: 
-      Server {
-        domain: null,
-        _events: [Object],
-        _eventsCount: 2,
-        _maxListeners: undefined,
-        _connections: 2,
-        _handle: [Object],
-        _usingSlaves: false,
-        _slaves: [],
-        _unref: false,
-        allowHalfOpen: true,
-        pauseOnConnect: false,
-        httpAllowHalfOpen: false,
-        timeout: 120000,
-        keepAliveTimeout: 5000,
-        _pendingResponseData: 0,
-        maxHeadersCount: null,
-        _connectionKey: '6::::4000',
-        [Symbol(asyncId)]: 8 },
-     _server: 
-      Server {
-        domain: null,
-        _events: [Object],
-        _eventsCount: 2,
-        _maxListeners: undefined,
-        _connections: 2,
-        _handle: [Object],
-        _usingSlaves: false,
-        _slaves: [],
-        _unref: false,
-        allowHalfOpen: true,
-        pauseOnConnect: false,
-        httpAllowHalfOpen: false,
-        timeout: 120000,
-        keepAliveTimeout: 5000,
-        _pendingResponseData: 0,
-        maxHeadersCount: null,
-        _connectionKey: '6::::4000',
-        [Symbol(asyncId)]: 8 },
-     _idleTimeout: 120000,
-     _idleNext: 
-      Socket {
-        connecting: false,
-        _hadError: false,
-        _handle: [Object],
-        _parent: null,
-        _host: null,
-        _readableState: [Object],
-        readable: true,
-        domain: null,
-        _events: [Object],
-        _eventsCount: 10,
-        _maxListeners: undefined,
-        _writableState: [Object],
-        writable: true,
-        allowHalfOpen: true,
-        _bytesDispatched: 0,
-        _sockname: null,
-        _pendingData: null,
-        _pendingEncoding: '',
-        server: [Object],
-        _server: [Object],
-        _idleTimeout: 120000,
-        _idleNext: [Object],
-        _idlePrev: [Circular],
-        _idleStart: 16541289,
-        _destroyed: false,
-        parser: [Object],
-        on: [Function: socketOnWrap],
-        _paused: false,
-        [Symbol(asyncId)]: 584,
-        [Symbol(bytesRead)]: 0,
-        [Symbol(asyncId)]: 585,
-        [Symbol(triggerAsyncId)]: 584 },
-     _idlePrev: 
-      TimersList {
-        _idleNext: [Circular],
-        _idlePrev: [Object],
-        _timer: [Object],
-        _unrefed: true,
-        msecs: 120000,
-        nextTick: false },
-     _idleStart: 16541428,
-     _destroyed: false,
-     parser: 
-      HTTPParser {
-        '0': [Function: parserOnHeaders],
-        '1': [Function: parserOnHeadersComplete],
-        '2': [Function: parserOnBody],
-        '3': [Function: parserOnMessageComplete],
-        '4': [Function: bound onParserExecute],
-        _headers: [],
-        _url: '',
-        _consumed: true,
-        socket: [Circular],
-        incoming: [Circular],
-        outgoing: null,
-        maxHeaderPairs: 2000,
-        onIncoming: [Function: bound parserOnIncoming] },
-     on: [Function: socketOnWrap],
-     _paused: false,
-     _httpMessage: 
-      ServerResponse {
-        domain: null,
-        _events: [Object],
-        _eventsCount: 2,
-        _maxListeners: undefined,
-        output: [],
-        outputEncodings: [],
-        outputCallbacks: [],
-        outputSize: 0,
-        writable: true,
-        _last: false,
-        upgrading: false,
-        chunkedEncoding: false,
-        shouldKeepAlive: true,
-        useChunkedEncodingByDefault: true,
-        sendDate: true,
-        _removedConnection: false,
-        _removedContLen: false,
-        _removedTE: false,
-        _contentLength: null,
-        _hasBody: true,
-        _trailer: '',
-        finished: false,
-        _headerSent: false,
-        socket: [Circular],
-        connection: [Circular],
-        _header: null,
-        _onPendingData: [Function: bound updateOutgoingData],
-        _sent100: false,
-        _expect_continue: false,
-        req: [Circular],
-        locals: {},
-        _startAt: undefined,
-        _startTime: undefined,
-        writeHead: [Function: writeHead],
-        __onFinished: [Object],
-        [Symbol(outHeadersKey)]: [Object] },
-     _peername: { address: '::1', family: 'IPv6', port: 63286 },
-     [Symbol(asyncId)]: 542,
-     [Symbol(bytesRead)]: 0,
-     [Symbol(asyncId)]: 543,
-     [Symbol(triggerAsyncId)]: 542 },
-  _consuming: false,
-  _dumped: false,
-  next: [Function: next],
-  baseUrl: '',
-  originalUrl: '/favicon.ico',
-  _parsedUrl: 
-   Url {
-     protocol: null,
-     slashes: null,
-     auth: null,
-     host: null,
-     port: null,
-     hostname: null,
-     hash: null,
-     search: null,
-     query: null,
-     pathname: '/favicon.ico',
-     path: '/favicon.ico',
-     href: '/favicon.ico',
-     _raw: '/favicon.ico' },
-  params: {},
-  query: {},
-  res: 
-   ServerResponse {
-     domain: null,
-     _events: { finish: [Array], end: [Function: onevent] },
-     _eventsCount: 2,
-     _maxListeners: undefined,
-     output: [],
-     outputEncodings: [],
-     outputCallbacks: [],
-     outputSize: 0,
-     writable: true,
-     _last: false,
-     upgrading: false,
-     chunkedEncoding: false,
-     shouldKeepAlive: true,
-     useChunkedEncodingByDefault: true,
-     sendDate: true,
-     _removedConnection: false,
-     _removedContLen: false,
-     _removedTE: false,
-     _contentLength: null,
-     _hasBody: true,
-     _trailer: '',
-     finished: false,
-     _headerSent: false,
-     socket: 
-      Socket {
-        connecting: false,
-        _hadError: false,
-        _handle: [Object],
-        _parent: null,
-        _host: null,
-        _readableState: [Object],
-        readable: true,
-        domain: null,
-        _events: [Object],
-        _eventsCount: 10,
-        _maxListeners: undefined,
-        _writableState: [Object],
-        writable: true,
-        allowHalfOpen: true,
-        _bytesDispatched: 518,
-        _sockname: null,
-        _pendingData: null,
-        _pendingEncoding: '',
-        server: [Object],
-        _server: [Object],
-        _idleTimeout: 120000,
-        _idleNext: [Object],
-        _idlePrev: [Object],
-        _idleStart: 16541428,
-        _destroyed: false,
-        parser: [Object],
-        on: [Function: socketOnWrap],
-        _paused: false,
-        _httpMessage: [Circular],
-        _peername: [Object],
-        [Symbol(asyncId)]: 542,
-        [Symbol(bytesRead)]: 0,
-        [Symbol(asyncId)]: 543,
-        [Symbol(triggerAsyncId)]: 542 },
-     connection: 
-      Socket {
-        connecting: false,
-        _hadError: false,
-        _handle: [Object],
-        _parent: null,
-        _host: null,
-        _readableState: [Object],
-        readable: true,
-        domain: null,
-        _events: [Object],
-        _eventsCount: 10,
-        _maxListeners: undefined,
-        _writableState: [Object],
-        writable: true,
-        allowHalfOpen: true,
-        _bytesDispatched: 518,
-        _sockname: null,
-        _pendingData: null,
-        _pendingEncoding: '',
-        server: [Object],
-        _server: [Object],
-        _idleTimeout: 120000,
-        _idleNext: [Object],
-        _idlePrev: [Object],
-        _idleStart: 16541428,
-        _destroyed: false,
-        parser: [Object],
-        on: [Function: socketOnWrap],
-        _paused: false,
-        _httpMessage: [Circular],
-        _peername: [Object],
-        [Symbol(asyncId)]: 542,
-        [Symbol(bytesRead)]: 0,
-        [Symbol(asyncId)]: 543,
-        [Symbol(triggerAsyncId)]: 542 },
-     _header: null,
-     _onPendingData: [Function: bound updateOutgoingData],
-     _sent100: false,
-     _expect_continue: false,
-     req: [Circular],
-     locals: {},
-     _startAt: undefined,
-     _startTime: undefined,
-     writeHead: [Function: writeHead],
-     __onFinished: { [Function: listener] queue: [Array] },
-     [Symbol(outHeadersKey)]: 
-      { 'x-dns-prefetch-control': [Array],
-        'x-frame-options': [Array],
-        'strict-transport-security': [Array],
-        'x-download-options': [Array],
-        'x-content-type-options': [Array],
-        'x-xss-protection': [Array],
-        'access-control-allow-origin': [Array] } },
-  body: {},
-  _startAt: [ 746774, 894509158 ],
-  _startTime: 2019-04-09T01:32:34.711Z,
-  _remoteAddress: '::1',
-  _parsedOriginalUrl: 
-   Url {
-     protocol: null,
-     slashes: null,
-     auth: null,
-     host: null,
-     port: null,
-     hostname: null,
-     hash: null,
-     search: null,
-     query: null,
-     pathname: '/favicon.ico',
-     path: '/favicon.ico',
-     href: '/favicon.ico',
-     _raw: '/favicon.ico' } }
-[2019-04-09T10:32:43.995] [ERROR] init - IncomingMessage {
-  _readableState: 
-   ReadableState {
-     objectMode: false,
-     highWaterMark: 16384,
-     buffer: BufferList { head: null, tail: null, length: 0 },
-     length: 0,
-     pipes: null,
-     pipesCount: 0,
-     flowing: null,
-     ended: true,
-     endEmitted: false,
-     reading: false,
-     sync: true,
-     needReadable: false,
-     emittedReadable: true,
-     readableListening: false,
-     resumeScheduled: false,
-     destroyed: false,
-     defaultEncoding: 'utf8',
-     awaitDrain: 0,
-     readingMore: true,
-     decoder: null,
-     encoding: null },
-  readable: true,
-  domain: null,
-  _events: {},
-  _eventsCount: 0,
-  _maxListeners: undefined,
-  socket: 
-   Socket {
-     connecting: false,
-     _hadError: false,
-     _handle: 
-      TCP {
-        reading: true,
-        owner: [Circular],
-        onread: [Function: onread],
-        onconnection: null,
-        writeQueueSize: 0,
-        _consumed: true },
-     _parent: null,
-     _host: null,
-     _readableState: 
-      ReadableState {
-        objectMode: false,
-        highWaterMark: 16384,
-        buffer: [Object],
-        length: 0,
-        pipes: null,
-        pipesCount: 0,
-        flowing: true,
-        ended: false,
-        endEmitted: false,
-        reading: true,
-        sync: false,
-        needReadable: true,
-        emittedReadable: false,
-        readableListening: false,
-        resumeScheduled: false,
-        destroyed: false,
-        defaultEncoding: 'utf8',
-        awaitDrain: 0,
-        readingMore: false,
-        decoder: null,
-        encoding: null },
-     readable: true,
-     domain: null,
-     _events: 
-      { end: [Array],
-        finish: [Function: onSocketFinish],
-        _socketEnd: [Function: onSocketEnd],
-        drain: [Array],
-        timeout: [Function: socketOnTimeout],
-        data: [Function: bound socketOnData],
-        error: [Array],
-        close: [Array],
-        resume: [Function: onSocketResume],
-        pause: [Function: onSocketPause] },
-     _eventsCount: 10,
-     _maxListeners: undefined,
-     _writableState: 
-      WritableState {
-        objectMode: false,
-        highWaterMark: 16384,
-        finalCalled: false,
-        needDrain: false,
-        ending: false,
-        ended: false,
-        finished: false,
-        destroyed: false,
-        decodeStrings: false,
-        defaultEncoding: 'utf8',
-        length: 0,
-        writing: false,
-        corked: 0,
-        sync: false,
-        bufferProcessing: false,
-        onwrite: [Function: bound onwrite],
-        writecb: null,
-        writelen: 0,
-        bufferedRequest: null,
-        lastBufferedRequest: null,
-        pendingcb: 0,
-        prefinished: false,
-        errorEmitted: false,
-        bufferedRequestCount: 0,
-        corkedRequestsFree: [Object] },
-     writable: true,
-     allowHalfOpen: true,
-     _bytesDispatched: 518,
-     _sockname: null,
-     _pendingData: null,
-     _pendingEncoding: '',
-     server: 
-      Server {
-        domain: null,
-        _events: [Object],
-        _eventsCount: 2,
-        _maxListeners: undefined,
-        _connections: 2,
-        _handle: [Object],
-        _usingSlaves: false,
-        _slaves: [],
-        _unref: false,
-        allowHalfOpen: true,
-        pauseOnConnect: false,
-        httpAllowHalfOpen: false,
-        timeout: 120000,
-        keepAliveTimeout: 5000,
-        _pendingResponseData: 0,
-        maxHeadersCount: null,
-        _connectionKey: '6::::4000',
-        [Symbol(asyncId)]: 8 },
-     _server: 
-      Server {
-        domain: null,
-        _events: [Object],
-        _eventsCount: 2,
-        _maxListeners: undefined,
-        _connections: 2,
-        _handle: [Object],
-        _usingSlaves: false,
-        _slaves: [],
-        _unref: false,
-        allowHalfOpen: true,
-        pauseOnConnect: false,
-        httpAllowHalfOpen: false,
-        timeout: 120000,
-        keepAliveTimeout: 5000,
-        _pendingResponseData: 0,
-        maxHeadersCount: null,
-        _connectionKey: '6::::4000',
-        [Symbol(asyncId)]: 8 },
-     _idleTimeout: 120000,
-     _idleNext: 
-      Socket {
-        connecting: false,
-        _hadError: false,
-        _handle: [Object],
-        _parent: null,
-        _host: null,
-        _readableState: [Object],
-        readable: true,
-        domain: null,
-        _events: [Object],
-        _eventsCount: 10,
-        _maxListeners: undefined,
-        _writableState: [Object],
-        writable: true,
-        allowHalfOpen: true,
-        _bytesDispatched: 0,
-        _sockname: null,
-        _pendingData: null,
-        _pendingEncoding: '',
-        server: [Object],
-        _server: [Object],
-        _idleTimeout: 120000,
-        _idleNext: [Object],
-        _idlePrev: [Circular],
-        _idleStart: 16550166,
-        _destroyed: false,
-        parser: [Object],
-        on: [Function: socketOnWrap],
-        _paused: false,
-        [Symbol(asyncId)]: 620,
-        [Symbol(bytesRead)]: 0,
-        [Symbol(asyncId)]: 621,
-        [Symbol(triggerAsyncId)]: 620 },
-     _idlePrev: 
-      TimersList {
-        _idleNext: [Circular],
-        _idlePrev: [Object],
-        _timer: [Object],
-        _unrefed: true,
-        msecs: 120000,
-        nextTick: false },
-     _idleStart: 16550712,
-     _destroyed: false,
-     parser: 
-      HTTPParser {
-        '0': [Function: parserOnHeaders],
-        '1': [Function: parserOnHeadersComplete],
-        '2': [Function: parserOnBody],
-        '3': [Function: parserOnMessageComplete],
-        '4': [Function: bound onParserExecute],
-        _headers: [],
-        _url: '',
-        _consumed: true,
-        socket: [Circular],
-        incoming: [Circular],
-        outgoing: null,
-        maxHeaderPairs: 2000,
-        onIncoming: [Function: bound parserOnIncoming] },
-     on: [Function: socketOnWrap],
-     _paused: false,
-     _httpMessage: 
-      ServerResponse {
-        domain: null,
-        _events: [Object],
-        _eventsCount: 2,
-        _maxListeners: undefined,
-        output: [],
-        outputEncodings: [],
-        outputCallbacks: [],
-        outputSize: 0,
-        writable: true,
-        _last: false,
-        upgrading: false,
-        chunkedEncoding: false,
-        shouldKeepAlive: true,
-        useChunkedEncodingByDefault: true,
-        sendDate: true,
-        _removedConnection: false,
-        _removedContLen: false,
-        _removedTE: false,
-        _contentLength: null,
-        _hasBody: true,
-        _trailer: '',
-        finished: false,
-        _headerSent: false,
-        socket: [Circular],
-        connection: [Circular],
-        _header: null,
-        _onPendingData: [Function: bound updateOutgoingData],
-        _sent100: false,
-        _expect_continue: false,
-        req: [Circular],
-        locals: {},
-        _startAt: undefined,
-        _startTime: undefined,
-        writeHead: [Function: writeHead],
-        __onFinished: [Object],
-        [Symbol(outHeadersKey)]: [Object] },
-     _peername: { address: '::1', family: 'IPv6', port: 63320 },
-     [Symbol(asyncId)]: 584,
-     [Symbol(bytesRead)]: 0,
-     [Symbol(asyncId)]: 585,
-     [Symbol(triggerAsyncId)]: 584 },
-  connection: 
-   Socket {
-     connecting: false,
-     _hadError: false,
-     _handle: 
-      TCP {
-        reading: true,
-        owner: [Circular],
-        onread: [Function: onread],
-        onconnection: null,
-        writeQueueSize: 0,
-        _consumed: true },
-     _parent: null,
-     _host: null,
-     _readableState: 
-      ReadableState {
-        objectMode: false,
-        highWaterMark: 16384,
-        buffer: [Object],
-        length: 0,
-        pipes: null,
-        pipesCount: 0,
-        flowing: true,
-        ended: false,
-        endEmitted: false,
-        reading: true,
-        sync: false,
-        needReadable: true,
-        emittedReadable: false,
-        readableListening: false,
-        resumeScheduled: false,
-        destroyed: false,
-        defaultEncoding: 'utf8',
-        awaitDrain: 0,
-        readingMore: false,
-        decoder: null,
-        encoding: null },
-     readable: true,
-     domain: null,
-     _events: 
-      { end: [Array],
-        finish: [Function: onSocketFinish],
-        _socketEnd: [Function: onSocketEnd],
-        drain: [Array],
-        timeout: [Function: socketOnTimeout],
-        data: [Function: bound socketOnData],
-        error: [Array],
-        close: [Array],
-        resume: [Function: onSocketResume],
-        pause: [Function: onSocketPause] },
-     _eventsCount: 10,
-     _maxListeners: undefined,
-     _writableState: 
-      WritableState {
-        objectMode: false,
-        highWaterMark: 16384,
-        finalCalled: false,
-        needDrain: false,
-        ending: false,
-        ended: false,
-        finished: false,
-        destroyed: false,
-        decodeStrings: false,
-        defaultEncoding: 'utf8',
-        length: 0,
-        writing: false,
-        corked: 0,
-        sync: false,
-        bufferProcessing: false,
-        onwrite: [Function: bound onwrite],
-        writecb: null,
-        writelen: 0,
-        bufferedRequest: null,
-        lastBufferedRequest: null,
-        pendingcb: 0,
-        prefinished: false,
-        errorEmitted: false,
-        bufferedRequestCount: 0,
-        corkedRequestsFree: [Object] },
-     writable: true,
-     allowHalfOpen: true,
-     _bytesDispatched: 518,
-     _sockname: null,
-     _pendingData: null,
-     _pendingEncoding: '',
-     server: 
-      Server {
-        domain: null,
-        _events: [Object],
-        _eventsCount: 2,
-        _maxListeners: undefined,
-        _connections: 2,
-        _handle: [Object],
-        _usingSlaves: false,
-        _slaves: [],
-        _unref: false,
-        allowHalfOpen: true,
-        pauseOnConnect: false,
-        httpAllowHalfOpen: false,
-        timeout: 120000,
-        keepAliveTimeout: 5000,
-        _pendingResponseData: 0,
-        maxHeadersCount: null,
-        _connectionKey: '6::::4000',
-        [Symbol(asyncId)]: 8 },
-     _server: 
-      Server {
-        domain: null,
-        _events: [Object],
-        _eventsCount: 2,
-        _maxListeners: undefined,
-        _connections: 2,
-        _handle: [Object],
-        _usingSlaves: false,
-        _slaves: [],
-        _unref: false,
-        allowHalfOpen: true,
-        pauseOnConnect: false,
-        httpAllowHalfOpen: false,
-        timeout: 120000,
-        keepAliveTimeout: 5000,
-        _pendingResponseData: 0,
-        maxHeadersCount: null,
-        _connectionKey: '6::::4000',
-        [Symbol(asyncId)]: 8 },
-     _idleTimeout: 120000,
-     _idleNext: 
-      Socket {
-        connecting: false,
-        _hadError: false,
-        _handle: [Object],
-        _parent: null,
-        _host: null,
-        _readableState: [Object],
-        readable: true,
-        domain: null,
-        _events: [Object],
-        _eventsCount: 10,
-        _maxListeners: undefined,
-        _writableState: [Object],
-        writable: true,
-        allowHalfOpen: true,
-        _bytesDispatched: 0,
-        _sockname: null,
-        _pendingData: null,
-        _pendingEncoding: '',
-        server: [Object],
-        _server: [Object],
-        _idleTimeout: 120000,
-        _idleNext: [Object],
-        _idlePrev: [Circular],
-        _idleStart: 16550166,
-        _destroyed: false,
-        parser: [Object],
-        on: [Function: socketOnWrap],
-        _paused: false,
-        [Symbol(asyncId)]: 620,
-        [Symbol(bytesRead)]: 0,
-        [Symbol(asyncId)]: 621,
-        [Symbol(triggerAsyncId)]: 620 },
-     _idlePrev: 
-      TimersList {
-        _idleNext: [Circular],
-        _idlePrev: [Object],
-        _timer: [Object],
-        _unrefed: true,
-        msecs: 120000,
-        nextTick: false },
-     _idleStart: 16550712,
-     _destroyed: false,
-     parser: 
-      HTTPParser {
-        '0': [Function: parserOnHeaders],
-        '1': [Function: parserOnHeadersComplete],
-        '2': [Function: parserOnBody],
-        '3': [Function: parserOnMessageComplete],
-        '4': [Function: bound onParserExecute],
-        _headers: [],
-        _url: '',
-        _consumed: true,
-        socket: [Circular],
-        incoming: [Circular],
-        outgoing: null,
-        maxHeaderPairs: 2000,
-        onIncoming: [Function: bound parserOnIncoming] },
-     on: [Function: socketOnWrap],
-     _paused: false,
-     _httpMessage: 
-      ServerResponse {
-        domain: null,
-        _events: [Object],
-        _eventsCount: 2,
-        _maxListeners: undefined,
-        output: [],
-        outputEncodings: [],
-        outputCallbacks: [],
-        outputSize: 0,
-        writable: true,
-        _last: false,
-        upgrading: false,
-        chunkedEncoding: false,
-        shouldKeepAlive: true,
-        useChunkedEncodingByDefault: true,
-        sendDate: true,
-        _removedConnection: false,
-        _removedContLen: false,
-        _removedTE: false,
-        _contentLength: null,
-        _hasBody: true,
-        _trailer: '',
-        finished: false,
-        _headerSent: false,
-        socket: [Circular],
-        connection: [Circular],
-        _header: null,
-        _onPendingData: [Function: bound updateOutgoingData],
-        _sent100: false,
-        _expect_continue: false,
-        req: [Circular],
-        locals: {},
-        _startAt: undefined,
-        _startTime: undefined,
-        writeHead: [Function: writeHead],
-        __onFinished: [Object],
-        [Symbol(outHeadersKey)]: [Object] },
-     _peername: { address: '::1', family: 'IPv6', port: 63320 },
-     [Symbol(asyncId)]: 584,
-     [Symbol(bytesRead)]: 0,
-     [Symbol(asyncId)]: 585,
-     [Symbol(triggerAsyncId)]: 584 },
-  httpVersionMajor: 1,
-  httpVersionMinor: 1,
-  httpVersion: '1.1',
-  complete: true,
-  headers: 
-   { host: 'localhost:4000',
-     connection: 'keep-alive',
-     pragma: 'no-cache',
-     'cache-control': 'no-cache',
-     'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
-     accept: 'image/webp,image/apng,image/*,*/*;q=0.8',
-     referer: 'http://localhost:4000/',
-     'accept-encoding': 'gzip, deflate, br',
-     'accept-language': 'en,ko-KR;q=0.9,ko;q=0.8',
-     cookie: '_xsrf=2|8021c097|e748bc4292eb77a8d970d6e7e730f7ce|1552469256; username-localhost-8888="2|1:0|10:1553754183|23:username-localhost-8888|44:YzgwYTZjNTMxNzdhNDc5ZDhkNmYwYzg1ZmRlOWE2ZTY=|c9abfa8d52093d549481a5a88d3803fec94493fab4fd47485ea837256082269e"' },
-  rawHeaders: 
-   [ 'Host',
-     'localhost:4000',
-     'Connection',
-     'keep-alive',
-     'Pragma',
-     'no-cache',
-     'Cache-Control',
-     'no-cache',
-     'User-Agent',
-     'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
-     'Accept',
-     'image/webp,image/apng,image/*,*/*;q=0.8',
-     'Referer',
-     'http://localhost:4000/',
-     'Accept-Encoding',
-     'gzip, deflate, br',
-     'Accept-Language',
-     'en,ko-KR;q=0.9,ko;q=0.8',
-     'Cookie',
-     '_xsrf=2|8021c097|e748bc4292eb77a8d970d6e7e730f7ce|1552469256; username-localhost-8888="2|1:0|10:1553754183|23:username-localhost-8888|44:YzgwYTZjNTMxNzdhNDc5ZDhkNmYwYzg1ZmRlOWE2ZTY=|c9abfa8d52093d549481a5a88d3803fec94493fab4fd47485ea837256082269e"' ],
-  trailers: {},
-  rawTrailers: [],
-  upgrade: false,
-  url: '/favicon.ico',
-  method: 'GET',
-  statusCode: null,
-  statusMessage: null,
-  client: 
-   Socket {
-     connecting: false,
-     _hadError: false,
-     _handle: 
-      TCP {
-        reading: true,
-        owner: [Circular],
-        onread: [Function: onread],
-        onconnection: null,
-        writeQueueSize: 0,
-        _consumed: true },
-     _parent: null,
-     _host: null,
-     _readableState: 
-      ReadableState {
-        objectMode: false,
-        highWaterMark: 16384,
-        buffer: [Object],
-        length: 0,
-        pipes: null,
-        pipesCount: 0,
-        flowing: true,
-        ended: false,
-        endEmitted: false,
-        reading: true,
-        sync: false,
-        needReadable: true,
-        emittedReadable: false,
-        readableListening: false,
-        resumeScheduled: false,
-        destroyed: false,
-        defaultEncoding: 'utf8',
-        awaitDrain: 0,
-        readingMore: false,
-        decoder: null,
-        encoding: null },
-     readable: true,
-     domain: null,
-     _events: 
-      { end: [Array],
-        finish: [Function: onSocketFinish],
-        _socketEnd: [Function: onSocketEnd],
-        drain: [Array],
-        timeout: [Function: socketOnTimeout],
-        data: [Function: bound socketOnData],
-        error: [Array],
-        close: [Array],
-        resume: [Function: onSocketResume],
-        pause: [Function: onSocketPause] },
-     _eventsCount: 10,
-     _maxListeners: undefined,
-     _writableState: 
-      WritableState {
-        objectMode: false,
-        highWaterMark: 16384,
-        finalCalled: false,
-        needDrain: false,
-        ending: false,
-        ended: false,
-        finished: false,
-        destroyed: false,
-        decodeStrings: false,
-        defaultEncoding: 'utf8',
-        length: 0,
-        writing: false,
-        corked: 0,
-        sync: false,
-        bufferProcessing: false,
-        onwrite: [Function: bound onwrite],
-        writecb: null,
-        writelen: 0,
-        bufferedRequest: null,
-        lastBufferedRequest: null,
-        pendingcb: 0,
-        prefinished: false,
-        errorEmitted: false,
-        bufferedRequestCount: 0,
-        corkedRequestsFree: [Object] },
-     writable: true,
-     allowHalfOpen: true,
-     _bytesDispatched: 518,
-     _sockname: null,
-     _pendingData: null,
-     _pendingEncoding: '',
-     server: 
-      Server {
-        domain: null,
-        _events: [Object],
-        _eventsCount: 2,
-        _maxListeners: undefined,
-        _connections: 2,
-        _handle: [Object],
-        _usingSlaves: false,
-        _slaves: [],
-        _unref: false,
-        allowHalfOpen: true,
-        pauseOnConnect: false,
-        httpAllowHalfOpen: false,
-        timeout: 120000,
-        keepAliveTimeout: 5000,
-        _pendingResponseData: 0,
-        maxHeadersCount: null,
-        _connectionKey: '6::::4000',
-        [Symbol(asyncId)]: 8 },
-     _server: 
-      Server {
-        domain: null,
-        _events: [Object],
-        _eventsCount: 2,
-        _maxListeners: undefined,
-        _connections: 2,
-        _handle: [Object],
-        _usingSlaves: false,
-        _slaves: [],
-        _unref: false,
-        allowHalfOpen: true,
-        pauseOnConnect: false,
-        httpAllowHalfOpen: false,
-        timeout: 120000,
-        keepAliveTimeout: 5000,
-        _pendingResponseData: 0,
-        maxHeadersCount: null,
-        _connectionKey: '6::::4000',
-        [Symbol(asyncId)]: 8 },
-     _idleTimeout: 120000,
-     _idleNext: 
-      Socket {
-        connecting: false,
-        _hadError: false,
-        _handle: [Object],
-        _parent: null,
-        _host: null,
-        _readableState: [Object],
-        readable: true,
-        domain: null,
-        _events: [Object],
-        _eventsCount: 10,
-        _maxListeners: undefined,
-        _writableState: [Object],
-        writable: true,
-        allowHalfOpen: true,
-        _bytesDispatched: 0,
-        _sockname: null,
-        _pendingData: null,
-        _pendingEncoding: '',
-        server: [Object],
-        _server: [Object],
-        _idleTimeout: 120000,
-        _idleNext: [Object],
-        _idlePrev: [Circular],
-        _idleStart: 16550166,
-        _destroyed: false,
-        parser: [Object],
-        on: [Function: socketOnWrap],
-        _paused: false,
-        [Symbol(asyncId)]: 620,
-        [Symbol(bytesRead)]: 0,
-        [Symbol(asyncId)]: 621,
-        [Symbol(triggerAsyncId)]: 620 },
-     _idlePrev: 
-      TimersList {
-        _idleNext: [Circular],
-        _idlePrev: [Object],
-        _timer: [Object],
-        _unrefed: true,
-        msecs: 120000,
-        nextTick: false },
-     _idleStart: 16550712,
-     _destroyed: false,
-     parser: 
-      HTTPParser {
-        '0': [Function: parserOnHeaders],
-        '1': [Function: parserOnHeadersComplete],
-        '2': [Function: parserOnBody],
-        '3': [Function: parserOnMessageComplete],
-        '4': [Function: bound onParserExecute],
-        _headers: [],
-        _url: '',
-        _consumed: true,
-        socket: [Circular],
-        incoming: [Circular],
-        outgoing: null,
-        maxHeaderPairs: 2000,
-        onIncoming: [Function: bound parserOnIncoming] },
-     on: [Function: socketOnWrap],
-     _paused: false,
-     _httpMessage: 
-      ServerResponse {
-        domain: null,
-        _events: [Object],
-        _eventsCount: 2,
-        _maxListeners: undefined,
-        output: [],
-        outputEncodings: [],
-        outputCallbacks: [],
-        outputSize: 0,
-        writable: true,
-        _last: false,
-        upgrading: false,
-        chunkedEncoding: false,
-        shouldKeepAlive: true,
-        useChunkedEncodingByDefault: true,
-        sendDate: true,
-        _removedConnection: false,
-        _removedContLen: false,
-        _removedTE: false,
-        _contentLength: null,
-        _hasBody: true,
-        _trailer: '',
-        finished: false,
-        _headerSent: false,
-        socket: [Circular],
-        connection: [Circular],
-        _header: null,
-        _onPendingData: [Function: bound updateOutgoingData],
-        _sent100: false,
-        _expect_continue: false,
-        req: [Circular],
-        locals: {},
-        _startAt: undefined,
-        _startTime: undefined,
-        writeHead: [Function: writeHead],
-        __onFinished: [Object],
-        [Symbol(outHeadersKey)]: [Object] },
-     _peername: { address: '::1', family: 'IPv6', port: 63320 },
-     [Symbol(asyncId)]: 584,
-     [Symbol(bytesRead)]: 0,
-     [Symbol(asyncId)]: 585,
-     [Symbol(triggerAsyncId)]: 584 },
-  _consuming: false,
-  _dumped: false,
-  next: [Function: next],
-  baseUrl: '',
-  originalUrl: '/favicon.ico',
-  _parsedUrl: 
-   Url {
-     protocol: null,
-     slashes: null,
-     auth: null,
-     host: null,
-     port: null,
-     hostname: null,
-     hash: null,
-     search: null,
-     query: null,
-     pathname: '/favicon.ico',
-     path: '/favicon.ico',
-     href: '/favicon.ico',
-     _raw: '/favicon.ico' },
-  params: {},
-  query: {},
-  res: 
-   ServerResponse {
-     domain: null,
-     _events: { finish: [Array], end: [Function: onevent] },
-     _eventsCount: 2,
-     _maxListeners: undefined,
-     output: [],
-     outputEncodings: [],
-     outputCallbacks: [],
-     outputSize: 0,
-     writable: true,
-     _last: false,
-     upgrading: false,
-     chunkedEncoding: false,
-     shouldKeepAlive: true,
-     useChunkedEncodingByDefault: true,
-     sendDate: true,
-     _removedConnection: false,
-     _removedContLen: false,
-     _removedTE: false,
-     _contentLength: null,
-     _hasBody: true,
-     _trailer: '',
-     finished: false,
-     _headerSent: false,
-     socket: 
-      Socket {
-        connecting: false,
-        _hadError: false,
-        _handle: [Object],
-        _parent: null,
-        _host: null,
-        _readableState: [Object],
-        readable: true,
-        domain: null,
-        _events: [Object],
-        _eventsCount: 10,
-        _maxListeners: undefined,
-        _writableState: [Object],
-        writable: true,
-        allowHalfOpen: true,
-        _bytesDispatched: 518,
-        _sockname: null,
-        _pendingData: null,
-        _pendingEncoding: '',
-        server: [Object],
-        _server: [Object],
-        _idleTimeout: 120000,
-        _idleNext: [Object],
-        _idlePrev: [Object],
-        _idleStart: 16550712,
-        _destroyed: false,
-        parser: [Object],
-        on: [Function: socketOnWrap],
-        _paused: false,
-        _httpMessage: [Circular],
-        _peername: [Object],
-        [Symbol(asyncId)]: 584,
-        [Symbol(bytesRead)]: 0,
-        [Symbol(asyncId)]: 585,
-        [Symbol(triggerAsyncId)]: 584 },
-     connection: 
-      Socket {
-        connecting: false,
-        _hadError: false,
-        _handle: [Object],
-        _parent: null,
-        _host: null,
-        _readableState: [Object],
-        readable: true,
-        domain: null,
-        _events: [Object],
-        _eventsCount: 10,
-        _maxListeners: undefined,
-        _writableState: [Object],
-        writable: true,
-        allowHalfOpen: true,
-        _bytesDispatched: 518,
-        _sockname: null,
-        _pendingData: null,
-        _pendingEncoding: '',
-        server: [Object],
-        _server: [Object],
-        _idleTimeout: 120000,
-        _idleNext: [Object],
-        _idlePrev: [Object],
-        _idleStart: 16550712,
-        _destroyed: false,
-        parser: [Object],
-        on: [Function: socketOnWrap],
-        _paused: false,
-        _httpMessage: [Circular],
-        _peername: [Object],
-        [Symbol(asyncId)]: 584,
-        [Symbol(bytesRead)]: 0,
-        [Symbol(asyncId)]: 585,
-        [Symbol(triggerAsyncId)]: 584 },
-     _header: null,
-     _onPendingData: [Function: bound updateOutgoingData],
-     _sent100: false,
-     _expect_continue: false,
-     req: [Circular],
-     locals: {},
-     _startAt: undefined,
-     _startTime: undefined,
-     writeHead: [Function: writeHead],
-     __onFinished: { [Function: listener] queue: [Array] },
-     [Symbol(outHeadersKey)]: 
-      { 'x-dns-prefetch-control': [Array],
-        'x-frame-options': [Array],
-        'strict-transport-security': [Array],
-        'x-download-options': [Array],
-        'x-content-type-options': [Array],
-        'x-xss-protection': [Array],
-        'access-control-allow-origin': [Array] } },
-  body: {},
-  _startAt: [ 746784, 178196169 ],
-  _startTime: 2019-04-09T01:32:43.995Z,
-  _remoteAddress: '::1',
-  _parsedOriginalUrl: 
-   Url {
-     protocol: null,
-     slashes: null,
-     auth: null,
-     host: null,
-     port: null,
-     hostname: null,
-     hash: null,
-     search: null,
-     query: null,
-     pathname: '/favicon.ico',
-     path: '/favicon.ico',
-     href: '/favicon.ico',
-     _raw: '/favicon.ico' } }
-[2019-04-09T10:32:56.989] [INFO] drones - GET - get band data...
-[2019-04-09T10:42:03.397] [INFO] drones - GET - get band data...
-[2019-04-09T13:35:16.343] [INFO] server - Express server listening on port 4000
+[2019-04-10T09:57:14.114] [INFO] visual - POST - Visual Recognition data...
+[2019-04-10T09:57:47.884] [INFO] visual - POST - Visual Recognition data...
+[2019-04-10T09:58:09.659] [INFO] visual - POST - Visual Recognition data...
+[2019-04-10T10:04:44.536] [INFO] visual - POST - Visual Recognition data...
+[2019-04-10T10:07:45.751] [INFO] drones - GET - get band data...
+[2019-04-10T10:09:32.309] [INFO] drones - GET - get band data...
+[2019-04-10T10:09:36.173] [INFO] drones - GET - get band data...
+[2019-04-10T10:10:21.138] [INFO] drones - GET - get band data...
+[2019-04-10T10:10:37.517] [INFO] drones - GET - get band data...
+[2019-04-10T10:11:08.627] [INFO] drones - GET - get band data...
+[2019-04-10T10:11:32.479] [INFO] drones - GET - get band data...
+[2019-04-10T10:11:35.213] [INFO] drones - GET - get band data...
+[2019-04-10T10:11:41.127] [INFO] visual - POST - Visual Recognition data...
+[2019-04-10T10:33:47.944] [INFO] server - Express server listening on port 4000
+[2019-04-10T10:34:29.911] [INFO] visual - POST - Visual Recognition data...
+[2019-04-10T10:34:53.691] [INFO] server - Express server listening on port 4000
+[2019-04-10T10:35:09.452] [INFO] visual - POST - Visual Recognition data...
+[2019-04-10T10:35:47.809] [INFO] server - Express server listening on port 4000
+[2019-04-10T10:35:57.976] [INFO] visual - POST - Visual Recognition data...
+[2019-04-10T10:44:41.987] [INFO] server - Express server listening on port 4000
+[2019-04-10T10:44:51.411] [INFO] visual - POST - Visual Recognition data...
+[2019-04-10T10:45:14.646] [INFO] server - Express server listening on port 4000
+[2019-04-10T10:45:19.407] [INFO] visual - POST - Visual Recognition data...
+[2019-04-10T10:46:12.439] [INFO] server - Express server listening on port 4000
+[2019-04-10T10:46:29.686] [INFO] visual - POST - Visual Recognition data...
+[2019-04-10T10:46:49.386] [INFO] server - Express server listening on port 4000
+[2019-04-10T10:46:56.224] [INFO] visual - POST - Visual Recognition data...
+[2019-04-10T10:48:42.929] [INFO] server - Express server listening on port 4000
+[2019-04-10T10:48:49.127] [INFO] visual - POST - Visual Recognition data...
+[2019-04-10T10:49:34.898] [INFO] server - Express server listening on port 4000
+[2019-04-10T10:49:40.736] [INFO] visual - POST - Visual Recognition data...
+[2019-04-10T10:50:57.679] [INFO] server - Express server listening on port 4000
+[2019-04-10T10:51:04.478] [INFO] visual - POST - Visual Recognition data...
+[2019-04-10T10:51:55.581] [INFO] server - Express server listening on port 4000
+[2019-04-10T10:52:00.623] [INFO] visual - POST - Visual Recognition data...
+[2019-04-10T10:52:29.584] [INFO] server - Express server listening on port 4000
+[2019-04-10T10:52:35.333] [INFO] visual - POST - Visual Recognition data...
+[2019-04-10T10:53:14.031] [INFO] server - Express server listening on port 4000
+[2019-04-10T10:53:21.794] [INFO] visual - POST - Visual Recognition data...
+[2019-04-10T10:53:57.062] [INFO] server - Express server listening on port 4000
+[2019-04-10T10:54:20.766] [INFO] visual - POST - Visual Recognition data...
+[2019-04-10T10:54:28.198] [INFO] visual - POST - Visual Recognition data...
+[2019-04-10T10:55:28.219] [INFO] server - Express server listening on port 4000
+[2019-04-10T10:55:34.774] [INFO] visual - POST - Visual Recognition data...
+[2019-04-10T10:56:11.182] [INFO] server - Express server listening on port 4000
+[2019-04-10T10:56:18.999] [INFO] visual - POST - Visual Recognition data...
+[2019-04-10T10:57:13.605] [INFO] server - Express server listening on port 4000
+[2019-04-10T10:57:24.945] [INFO] visual - POST - Visual Recognition data...
+[2019-04-10T10:57:40.128] [INFO] visual - POST - Visual Recognition data...
+[2019-04-10T10:57:47.297] [INFO] visual - POST - Visual Recognition data...
+[2019-04-10T10:57:56.291] [INFO] visual - POST - Visual Recognition data...
+[2019-04-10T10:58:03.047] [INFO] visual - POST - Visual Recognition data...
+[2019-04-10T10:58:34.335] [INFO] visual - POST - Visual Recognition data...
+[2019-04-10T10:58:39.449] [INFO] visual - POST - Visual Recognition data...
+[2019-04-10T10:58:44.615] [INFO] visual - POST - Visual Recognition data...
+[2019-04-10T10:59:14.292] [INFO] server - Express server listening on port 4000
+[2019-04-10T10:59:23.272] [INFO] visual - POST - Visual Recognition data...
+[2019-04-10T11:01:11.549] [INFO] server - Express server listening on port 4000
+[2019-04-10T11:01:19.268] [INFO] visual - POST - Visual Recognition data...
+[2019-04-10T11:01:34.281] [INFO] visual - POST - Visual Recognition data...
+[2019-04-10T11:01:39.601] [INFO] visual - POST - Visual Recognition data...
+[2019-04-10T11:02:10.913] [INFO] server - Express server listening on port 4000
+[2019-04-10T11:02:20.136] [INFO] visual - POST - Visual Recognition data...
+[2019-04-10T11:02:27.360] [INFO] visual - POST - Visual Recognition data...
+[2019-04-10T11:02:34.492] [INFO] visual - POST - Visual Recognition data...
+[2019-04-10T11:02:39.763] [INFO] visual - POST - Visual Recognition data...
+[2019-04-10T11:02:45.554] [INFO] visual - POST - Visual Recognition data...
+[2019-04-10T11:02:50.363] [INFO] visual - POST - Visual Recognition data...
+[2019-04-10T11:02:57.083] [INFO] visual - POST - Visual Recognition data...
+[2019-04-10T11:04:46.924] [INFO] server - Express server listening on port 4000
+[2019-04-10T11:04:53.338] [INFO] visual - POST - Visual Recognition data...
+[2019-04-10T11:05:00.840] [INFO] visual - POST - Visual Recognition data...
+[2019-04-10T11:18:17.876] [INFO] drones - GET - get band data...
+[2019-04-10T11:18:44.224] [INFO] visual - POST - Visual Recognition data...
+[2019-04-10T11:24:27.420] [INFO] visual - POST - Visual Recognition data...
+[2019-04-10T11:24:32.488] [INFO] visual - POST - Visual Recognition data...
+[2019-04-10T11:24:36.713] [INFO] visual - POST - Visual Recognition data...
+[2019-04-10T11:24:41.647] [INFO] visual - POST - Visual Recognition data...
+[2019-04-10T11:37:36.204] [INFO] drones - GET - get band data...
+[2019-04-10T11:37:41.597] [INFO] drones - GET - get band data...
+[2019-04-10T11:37:45.426] [INFO] visual - POST - Visual Recognition data...
+[2019-04-10T11:38:00.239] [INFO] drones - GET - get band data...
+[2019-04-10T11:38:10.143] [INFO] drones - GET - get band data...
+[2019-04-10T11:38:22.614] [INFO] visual - POST - Visual Recognition data...
+[2019-04-10T12:41:24.415] [INFO] drones - GET - get band data...
+[2019-04-10T12:41:28.488] [INFO] drones - GET - get band data...
+[2019-04-10T12:41:40.548] [INFO] visual - POST - Visual Recognition data...
+[2019-04-10T12:41:59.385] [INFO] drones - GET - get band data...
+[2019-04-10T12:42:01.168] [INFO] drones - GET - get band data...
+[2019-04-10T12:42:11.284] [INFO] drones - GET - get band data...
+[2019-04-10T12:42:18.533] [INFO] drones - GET - get band data...
+[2019-04-10T12:46:37.121] [INFO] drones - GET - get band data...
+[2019-04-10T12:46:43.168] [INFO] drones - GET - get band data...
+[2019-04-10T12:47:06.288] [INFO] drones - GET - get band data...
+[2019-04-10T12:47:10.160] [INFO] drones - GET - get band data...
+[2019-04-10T12:47:22.263] [INFO] drones - GET - get band data...
+[2019-04-10T12:47:51.415] [INFO] drones - GET - get band data...
+[2019-04-10T12:47:56.581] [INFO] drones - GET - get band data...
+[2019-04-10T12:48:02.663] [INFO] visual - POST - Visual Recognition data...
+[2019-04-10T12:48:27.377] [INFO] visual - POST - Visual Recognition data...
+[2019-04-10T12:49:14.814] [INFO] server - Express server listening on port 4000
+[2019-04-10T12:49:17.818] [INFO] drones - GET - get band data...
+[2019-04-10T12:49:23.065] [INFO] visual - POST - Visual Recognition data...
+[2019-04-10T12:49:58.216] [INFO] visual - POST - Visual Recognition data...
+[2019-04-10T12:50:24.142] [INFO] server - Express server listening on port 4000
+[2019-04-10T12:50:29.833] [INFO] visual - POST - Visual Recognition data...
+[2019-04-10T12:50:55.981] [INFO] server - Express server listening on port 4000
+[2019-04-10T12:51:02.250] [INFO] visual - POST - Visual Recognition data...
+[2019-04-10T12:51:29.114] [INFO] drones - GET - get band data...
+[2019-04-10T12:51:35.064] [INFO] drones - GET - get band data...
+[2019-04-10T12:51:39.041] [INFO] visual - POST - Visual Recognition data...
+[2019-04-10T12:52:35.023] [INFO] server - Express server listening on port 4000
+[2019-04-10T12:52:47.108] [INFO] visual - POST - Visual Recognition data...
+[2019-04-10T12:53:00.312] [INFO] drones - GET - get band data...
+[2019-04-10T12:53:02.319] [INFO] drones - GET - get band data...
+[2019-04-10T12:53:06.696] [INFO] drones - GET - get band data...
+[2019-04-10T12:53:17.707] [INFO] visual - POST - Visual Recognition data...
+[2019-04-10T12:59:39.255] [INFO] visual - POST - Visual Recognition data...
+[2019-04-10T12:59:44.162] [INFO] visual - POST - Visual Recognition data...
+[2019-04-10T13:00:14.818] [INFO] drones - GET - get band data...
+[2019-04-10T13:00:16.687] [INFO] drones - GET - get band data...
+[2019-04-10T13:00:20.072] [INFO] drones - GET - get band data...
+[2019-04-10T13:00:25.336] [INFO] visual - POST - Visual Recognition data...
+[2019-04-10T13:00:32.062] [INFO] visual - POST - Visual Recognition data...
+[2019-04-10T13:11:21.806] [INFO] drones - GET - get band data...
+[2019-04-10T13:11:26.738] [INFO] drones - GET - get band data...
+[2019-04-10T13:11:31.867] [INFO] visual - POST - Visual Recognition data...
+[2019-04-10T13:11:53.003] [INFO] drones - GET - get band data...
+[2019-04-10T13:12:15.043] [INFO] drones - GET - get band data...
+[2019-04-10T13:12:16.851] [INFO] drones - GET - get band data...
+[2019-04-10T13:48:51.690] [INFO] drones - GET - get band data...
+[2019-04-10T13:49:00.400] [INFO] drones - GET - get band data...
+[2019-04-10T13:49:24.687] [INFO] drones - GET - get band data...
+[2019-04-10T13:49:41.687] [INFO] drones - GET - get band data...
+[2019-04-10T13:49:46.845] [INFO] drones - GET - get band data...
+[2019-04-10T13:49:55.380] [INFO] drones - GET - get band data...
+[2019-04-10T13:49:59.815] [INFO] drones - GET - get band data...
+[2019-04-10T13:50:17.335] [INFO] drones - GET - get band data...
+[2019-04-10T13:50:22.670] [INFO] drones - GET - get band data...
+[2019-04-10T13:50:54.541] [INFO] drones - GET - get band data...
+[2019-04-10T13:50:59.117] [INFO] drones - GET - get band data...
+[2019-04-10T13:51:04.640] [INFO] drones - GET - get band data...
+[2019-04-10T13:51:20.575] [INFO] drones - GET - get band data...
+[2019-04-10T13:51:23.372] [INFO] drones - GET - get band data...
+[2019-04-10T13:51:29.626] [INFO] drones - GET - get band data...
+[2019-04-10T13:52:50.690] [INFO] drones - GET - get band data...
+[2019-04-10T13:52:51.640] [INFO] drones - GET - get band data...
+[2019-04-10T13:53:00.472] [INFO] drones - GET - get band data...
+[2019-04-10T13:53:17.323] [INFO] visual - POST - Visual Recognition data...
+[2019-04-10T13:59:21.171] [INFO] visual - POST - Visual Recognition data...
+[2019-04-10T13:59:49.954] [INFO] drones - GET - get band data...
+[2019-04-10T14:01:24.696] [INFO] drones - GET - get band data...
+[2019-04-10T14:15:45.647] [INFO] drones - GET - get band data...
+[2019-04-10T14:32:51.731] [INFO] drones - GET - get band data...
+[2019-04-10T14:33:27.336] [INFO] drones - GET - get band data...
+[2019-04-10T14:34:52.620] [INFO] drones - GET - get band data...
+[2019-04-10T14:35:06.792] [INFO] drones - GET - get band data...
+[2019-04-10T14:35:10.897] [INFO] drones - GET - get band data...
+[2019-04-10T14:35:51.287] [INFO] drones - GET - get band data...
+[2019-04-10T14:35:57.265] [INFO] drones - GET - get band data...
+[2019-04-10T14:36:03.298] [INFO] drones - GET - get band data...
+[2019-04-10T14:36:44.455] [INFO] drones - GET - get band data...
+[2019-04-10T14:36:48.184] [INFO] drones - GET - get band data...
+[2019-04-10T14:36:52.791] [INFO] visual - POST - Visual Recognition data...
+[2019-04-10T14:39:12.268] [INFO] drones - GET - get band data...
+[2019-04-10T16:04:26.209] [INFO] server - Express server listening on port 4000
+[2019-04-10T16:04:27.048] [DEBUG] ibmiotf - onConnect
+[2019-04-10T16:04:31.001] [INFO] ibmiotf - 
+[2019-04-10T16:04:50.914] [INFO] server - Express server listening on port 4000
+[2019-04-10T16:04:51.705] [DEBUG] ibmiotf - onConnect
+[2019-04-10T16:05:00.996] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:05:00.996] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 34 37 39 31 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 31 32 34 7d>
+[2019-04-10T16:05:10.998] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:05:10.998] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 31 31 37 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 31 33 33 7d>
+[2019-04-10T16:05:20.998] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:05:20.998] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 34 32 37 39 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 31 30 39 7d>
+[2019-04-10T16:05:30.999] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:05:30.999] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 31 32 33 36 36 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 31 30 30 7d>
+[2019-04-10T16:05:40.996] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:05:40.997] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 31 31 38 35 35 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 31 33 33 7d>
+[2019-04-10T16:05:52.022] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:05:52.022] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 31 39 31 32 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 37 31 7d>
+[2019-04-10T16:06:03.879] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:06:03.879] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 36 37 32 30 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 31 34 34 7d>
+[2019-04-10T16:06:14.052] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:06:14.052] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 38 39 31 38 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 38 39 7d>
+[2019-04-10T16:06:26.407] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:06:26.407] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 31 33 37 38 37 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 31 33 33 7d>
+[2019-04-10T16:06:36.864] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:06:36.864] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 37 31 37 33 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 31 30 34 7d>
+[2019-04-10T16:06:47.916] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:06:47.917] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 32 39 39 30 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 31 32 33 7d>
+[2019-04-10T16:06:58.044] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:06:58.045] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 36 34 36 33 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 31 31 34 7d>
+[2019-04-10T16:07:08.873] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:07:08.874] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 31 34 34 37 31 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 37 33 7d>
+[2019-04-10T16:07:19.883] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:07:19.883] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 31 33 32 36 37 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 31 33 38 7d>
+[2019-04-10T16:07:29.903] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:07:29.904] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 31 34 38 34 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 38 38 7d>
+[2019-04-10T16:07:40.859] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:07:40.859] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 31 34 31 35 31 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 37 37 7d>
+[2019-04-10T16:07:52.045] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:07:52.045] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 39 32 30 33 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 31 31 38 7d>
+[2019-04-10T16:08:04.923] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:08:04.924] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 36 34 32 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 31 32 38 7d>
+[2019-04-10T16:08:14.951] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:08:14.951] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 39 33 34 36 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 31 33 32 7d>
+[2019-04-10T16:08:25.275] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:08:25.275] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 37 33 33 32 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 38 37 7d>
+[2019-04-10T16:08:34.863] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:08:34.864] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 33 39 30 31 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 31 31 36 7d>
+[2019-04-10T16:08:44.927] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:08:44.927] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 37 32 35 30 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 31 30 38 7d>
+[2019-04-10T16:08:54.894] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:08:54.894] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 34 32 36 38 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 36 37 7d>
+[2019-04-10T16:09:04.882] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:09:04.882] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 39 32 39 32 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 31 31 36 7d>
+[2019-04-10T16:09:14.861] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:09:14.861] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 32 30 31 38 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 36 38 7d>
+[2019-04-10T16:09:24.912] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:09:24.912] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 34 33 33 37 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 31 34 32 7d>
+[2019-04-10T16:09:37.894] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:09:37.894] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 39 36 31 34 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 31 31 31 7d>
+[2019-04-10T16:09:48.888] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:09:48.889] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 38 38 34 37 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 37 39 7d>
+[2019-04-10T16:09:58.883] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:09:58.884] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 34 33 30 31 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 31 34 33 7d>
+[2019-04-10T16:10:11.913] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:10:11.914] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 33 33 34 31 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 31 33 37 7d>
+[2019-04-10T16:10:21.882] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:10:21.882] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 39 37 33 35 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 31 32 33 7d>
+[2019-04-10T16:10:32.545] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:10:32.546] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 31 31 31 32 37 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 39 33 7d>
+[2019-04-10T16:10:43.875] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:10:43.876] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 36 35 31 37 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 38 31 7d>
+[2019-04-10T16:10:54.572] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:10:54.572] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 32 30 39 32 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 31 31 39 7d>
+[2019-04-10T16:11:06.544] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:11:06.544] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 31 34 36 34 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 31 30 33 7d>
+[2019-04-10T16:11:18.048] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:11:18.048] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 31 30 38 32 33 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 31 31 38 7d>
+[2019-04-10T16:11:29.881] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:11:29.881] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 31 34 32 38 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 38 33 7d>
+[2019-04-10T16:11:39.849] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:11:39.849] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 33 34 32 38 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 31 30 32 7d>
+[2019-04-10T16:11:50.546] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:11:50.546] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 31 36 37 34 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 36 38 7d>
+[2019-04-10T16:12:05.039] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:12:05.040] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 34 35 36 36 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 31 30 34 7d>
+[2019-04-10T16:12:17.898] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:12:17.898] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 34 32 37 33 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 38 30 7d>
+[2019-04-10T16:12:29.881] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:12:29.881] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 31 33 33 39 31 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 38 31 7d>
+[2019-04-10T16:12:39.545] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:12:39.545] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 39 36 30 31 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 31 32 32 7d>
+[2019-04-10T16:12:50.541] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:12:50.541] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 33 35 34 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 37 37 7d>
+[2019-04-10T16:13:03.545] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:13:03.545] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 33 34 36 36 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 31 34 35 7d>
+[2019-04-10T16:13:15.036] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:13:15.037] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 31 30 36 32 37 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 31 34 36 7d>
+[2019-04-10T16:21:38.519] [INFO] server - Express server listening on port 4000
+[2019-04-10T16:21:39.320] [DEBUG] ibmiotf - onConnect
+[2019-04-10T16:21:50.523] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:21:50.523] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 37 38 39 32 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 31 32 39 7d>
+[2019-04-10T16:22:00.521] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:22:00.521] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 31 34 35 35 34 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 31 33 38 7d>
+[2019-04-10T16:22:12.519] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:22:12.519] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 31 33 36 39 36 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 36 32 7d>
+[2019-04-10T16:22:23.871] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:22:23.872] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 31 34 32 36 33 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 31 33 32 7d>
+[2019-04-10T16:22:29.502] [INFO] server - Express server listening on port 4000
+[2019-04-10T16:22:30.385] [DEBUG] ibmiotf - onConnect
+[2019-04-10T16:22:33.520] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:22:33.520] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 34 38 35 31 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 38 34 7d>
+[2019-04-10T16:22:44.521] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:22:44.521] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 33 31 30 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 38 33 7d>
+[2019-04-10T16:22:56.456] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:22:56.456] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 35 34 32 31 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 39 39 7d>
+[2019-04-10T16:23:07.519] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:23:07.519] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 31 32 32 31 39 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 31 31 37 7d>
+[2019-04-10T16:23:18.835] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:23:18.835] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 31 36 36 37 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 31 34 39 7d>
+[2019-04-10T16:23:28.870] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:23:28.871] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 39 39 35 33 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 36 32 7d>
+[2019-04-10T16:23:38.535] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:23:38.535] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 35 30 39 38 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 31 33 35 7d>
+[2019-04-10T16:23:48.542] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:23:48.542] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 38 35 34 32 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 38 36 7d>
+[2019-04-10T16:23:58.518] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:23:58.518] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 35 35 39 32 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 31 33 37 7d>
+[2019-04-10T16:24:09.830] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:24:09.830] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 37 38 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 31 31 38 7d>
+[2019-04-10T16:24:19.515] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:24:19.515] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 38 35 36 39 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 31 30 39 7d>
+[2019-04-10T16:24:29.711] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:24:29.711] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 31 30 33 39 33 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 37 35 7d>
+[2019-04-10T16:24:41.514] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:24:41.515] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 37 38 34 38 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 31 30 37 7d>
+[2019-04-10T16:24:52.849] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:24:52.850] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 33 34 30 30 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 36 33 7d>
+[2019-04-10T16:25:03.514] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:25:03.515] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 31 33 37 37 38 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 38 36 7d>
+[2019-04-10T16:25:13.514] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:25:13.515] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 38 37 35 39 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 38 37 7d>
+[2019-04-10T16:25:27.877] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:25:27.878] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 37 37 35 34 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 31 30 36 7d>
+[2019-04-10T16:25:38.849] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:25:38.849] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 31 33 31 34 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 31 34 39 7d>
+[2019-04-10T16:25:49.012] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:25:49.012] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 31 34 37 30 30 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 31 31 35 7d>
+[2019-04-10T16:26:00.883] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:26:00.883] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 36 37 32 30 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 39 30 7d>
+[2019-04-10T16:26:10.517] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:26:10.517] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 36 38 34 32 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 31 32 32 7d>
+[2019-04-10T16:26:21.512] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:26:21.512] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 36 33 34 30 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 31 30 30 7d>
+[2019-04-10T16:26:33.005] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:26:33.006] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 34 37 32 35 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 37 39 7d>
+[2019-04-10T16:26:45.511] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:26:45.511] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 31 33 33 32 32 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 36 31 7d>
+[2019-04-10T16:26:56.019] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:26:56.019] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 32 30 34 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 38 34 7d>
+[2019-04-10T16:27:07.511] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:27:07.511] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 31 33 37 38 30 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 39 31 7d>
+[2019-04-10T16:27:18.555] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:27:18.555] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 39 35 38 38 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 31 31 33 7d>
+[2019-04-10T16:27:28.510] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:27:28.510] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 35 34 30 35 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 36 35 7d>
+[2019-04-10T16:27:38.509] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:27:38.509] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 31 32 39 37 30 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 31 31 38 7d>
+[2019-04-10T16:27:49.508] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:27:49.509] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 38 33 35 37 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 31 31 32 7d>
+[2019-04-10T16:27:59.855] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:27:59.855] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 32 32 37 33 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 38 33 7d>
+[2019-04-10T16:28:12.507] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:28:12.507] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 37 38 38 35 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 31 32 34 7d>
+[2019-04-10T16:28:24.850] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:28:24.850] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 35 35 37 35 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 31 31 30 7d>
+[2019-04-10T16:28:34.509] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:28:34.509] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 31 31 38 31 33 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 38 35 7d>
+[2019-04-10T16:28:44.508] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:28:44.508] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 31 33 37 36 37 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 31 31 35 7d>
+[2019-04-10T16:28:54.519] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:28:54.519] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 39 36 36 34 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 31 30 36 7d>
+[2019-04-10T16:29:04.526] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:29:04.526] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 31 33 32 35 37 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 31 33 39 7d>
+[2019-04-10T16:29:15.875] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:29:15.875] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 31 30 30 33 39 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 31 32 38 7d>
+[2019-04-10T16:29:26.512] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:29:26.512] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 31 34 30 39 35 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 37 38 7d>
+[2019-04-10T16:29:35.270] [INFO] server - Express server listening on port 4000
+[2019-04-10T16:29:36.189] [DEBUG] ibmiotf - onConnect
+[2019-04-10T16:29:37.658] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:29:37.658] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 34 34 39 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 31 30 31 7d>
+[2019-04-10T16:29:48.520] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:29:48.520] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 31 31 31 36 39 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 31 31 39 7d>
+[2019-04-10T16:29:59.507] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:29:59.507] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 35 34 32 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 39 33 7d>
+[2019-04-10T16:30:11.024] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:30:11.024] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 31 33 38 34 33 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 31 33 38 7d>
+[2019-04-10T16:30:21.581] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:30:21.581] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 37 32 36 38 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 39 32 7d>
+[2019-04-10T16:30:33.000] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:30:33.001] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 33 38 34 36 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 31 32 33 7d>
+[2019-04-10T16:30:44.005] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:30:44.005] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 38 35 31 31 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 39 38 7d>
+[2019-04-10T16:30:54.504] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:30:54.504] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 31 34 37 32 36 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 31 34 37 7d>
+[2019-04-10T16:31:06.001] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:31:06.002] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 31 30 32 33 37 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 31 33 35 7d>
+[2019-04-10T16:31:16.855] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:31:16.855] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 33 35 32 38 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 31 33 36 7d>
+[2019-04-10T16:31:27.991] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:31:27.992] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 31 31 38 35 36 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 31 34 35 7d>
+[2019-04-10T16:31:39.822] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:31:39.822] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 39 36 33 32 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 31 34 39 7d>
+[2019-04-10T16:31:50.513] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:31:50.514] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 31 31 35 38 31 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 36 37 7d>
+[2019-04-10T16:32:01.501] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:32:01.502] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 31 33 37 36 39 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 37 34 7d>
+[2019-04-10T16:32:13.499] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:32:13.499] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 39 34 33 33 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 31 31 32 7d>
+[2019-04-10T16:32:23.501] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:32:23.501] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 32 34 31 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 31 31 38 7d>
+[2019-04-10T16:32:33.993] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:32:33.994] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 31 32 34 30 33 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 38 32 7d>
+[2019-04-10T16:32:46.778] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:32:46.779] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 31 36 38 30 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 31 31 34 7d>
+[2019-04-10T16:32:56.500] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:32:56.500] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 39 30 33 35 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 37 37 7d>
+[2019-04-10T16:33:07.499] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:33:07.499] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 31 34 39 33 35 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 31 31 31 7d>
+[2019-04-10T16:33:18.989] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:33:18.990] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 39 34 32 35 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 31 33 39 7d>
+[2019-04-10T16:33:29.508] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:33:29.508] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 32 32 31 32 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 31 31 30 7d>
+[2019-04-10T16:33:41.807] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:33:41.807] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 38 32 37 37 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 36 39 7d>
+[2019-04-10T16:33:51.804] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:33:51.804] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 31 39 33 38 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 36 36 7d>
+[2019-04-10T16:34:02.497] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:34:02.497] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 36 31 39 37 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 37 39 7d>
+[2019-04-10T16:34:11.944] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:34:11.944] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 31 32 37 38 32 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 39 34 7d>
+[2019-04-10T16:34:22.798] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:34:22.798] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 34 37 35 39 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 36 34 7d>
+[2019-04-10T16:34:34.803] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:34:34.804] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 39 38 35 33 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 37 31 7d>
+[2019-04-10T16:34:46.888] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:34:46.889] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 37 37 33 33 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 39 36 7d>
+[2019-04-10T16:34:57.873] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:34:57.874] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 37 32 35 34 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 37 32 7d>
+[2019-04-10T16:35:09.805] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:35:09.805] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 32 35 39 39 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 31 30 39 7d>
+[2019-04-10T16:35:20.496] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:35:20.496] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 36 33 31 32 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 38 31 7d>
+[2019-04-10T16:35:29.936] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:35:29.936] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 39 39 38 35 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 38 34 7d>
+[2019-04-10T16:35:39.940] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:35:39.940] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 34 38 37 33 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 31 32 37 7d>
+[2019-04-10T16:35:49.933] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:35:49.933] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 38 37 32 36 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 31 34 36 7d>
+[2019-04-10T16:35:59.930] [DEBUG] ibmiotf - Test_Band_01
+[2019-04-10T16:35:59.930] [DEBUG] ibmiotf - <Buffer 7b 22 73 74 65 70 43 6f 75 6e 74 22 3a 31 34 36 39 35 2c 22 61 76 67 48 65 61 72 74 52 61 74 65 22 3a 31 32 37 7d>
+[2019-04-10T16:36:04.168] [INFO] server - Express server listening on port 4000
+[2019-04-10T16:36:04.979] [DEBUG] ibmiotf - onConnect
+[2019-04-10T16:36:09.934] [DEBUG] ibmiotf - { stepCount: 791, avgHeartRate: 88 }
+[2019-04-10T16:36:20.434] [DEBUG] ibmiotf - { stepCount: 4339, avgHeartRate: 124 }
+[2019-04-10T16:36:29.939] [DEBUG] ibmiotf - { stepCount: 11687, avgHeartRate: 90 }
+[2019-04-10T16:36:39.942] [DEBUG] ibmiotf - { stepCount: 5107, avgHeartRate: 150 }
+[2019-04-10T16:36:49.931] [DEBUG] ibmiotf - { stepCount: 10609, avgHeartRate: 83 }
+[2019-04-10T16:38:29.740] [INFO] server - Express server listening on port 4000
+[2019-04-10T16:38:30.844] [DEBUG] ibmiotf - onConnect
+[2019-04-10T16:38:53.233] [INFO] drones - GET - get band data...

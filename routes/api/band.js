@@ -2,7 +2,7 @@
 
 const express = require('express');
 const logger = require('../../logger')('drones');
-
+const iotf = require('../../iotf/iotmanager');
 const errorHandler = require('../../utils/errorHandler');
 
 module.exports = middlewares => {
@@ -35,7 +35,7 @@ module.exports = middlewares => {
    */
   router.get('/', (req, res) => {
     logger.info('GET - get band data...');
-    res.send({ band: 'a' });
+    res.send(iotf.getBandData());
     // get band data from iot_simulator
   });
 
