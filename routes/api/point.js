@@ -83,18 +83,19 @@ module.exports = middlewares => {
    *       200:
    *         description: success
    */
-  router.get('/:uid', (req, res) => {
+  router.get('/:uid/:month', (req, res) => {
     logger.info('GET - get point data from user...');
     logger.info(req.params.uid);
     pointDAO
-      .get(req.params.uid)
-      .then(data => {
-        console.log(data);
-        res.send(data);
+      .search('app', 'search', {
+        q: `uid:${req.params.uid} AND date:[2019${req.params.month}01* TO 2019${req.params.month}31*]`,
+        include_docs: true,
       })
-      .catch(err => {
-        res.send({});
-      });
+      .then(ret => {
+        console.log(ret);
+        res.send(ret);
+      })
+      .catch(err => {});
   });
 
   /**
