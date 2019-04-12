@@ -83,6 +83,41 @@ module.exports = middlewares => {
    *       200:
    *         description: success
    */
+  router.get('/:uid', (req, res) => {
+    logger.info('GET - get point data from user...');
+    logger.info(req.params.uid);
+    pointDAO
+      .get(req.params.uid)
+      .then(ret => {
+        res.send(ret);
+      })
+      .catch(err => {
+        res.send(ret);
+      });
+  });
+
+  /** @swagger
+   *
+   * /point/{uid}/{month}:
+   *   get:
+   *     tags:
+   *       - point
+   *     description: Get point history list data
+   *     parameters:
+   *     - in: path
+   *       name: uid
+   *       description: user ID
+   *       required: true
+   *     - in: path
+   *       name: month
+   *       description: month
+   *       required: true
+   *     produces:
+   *       - application/json
+   *     responses:
+   *       200:
+   *         description: success
+   */
   router.get('/:uid/:month', (req, res) => {
     logger.info('GET - get point data from user...');
     logger.info(req.params.uid);
@@ -95,7 +130,9 @@ module.exports = middlewares => {
         console.log(ret);
         res.send(ret);
       })
-      .catch(err => {});
+      .catch(err => {
+        res.send(ret);
+      });
   });
 
   /**
