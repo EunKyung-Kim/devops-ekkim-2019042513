@@ -8,7 +8,7 @@ const moment = require('moment');
 
 const appClientConfig = {
   org: 'x01xog',
-  id: 'KBLI-startup-dev',
+  id: 'KBLI-startup',
   domain: 'internetofthings.ibmcloud.com',
   'auth-key': 'a-x01xog-lvljjuhifr',
   'auth-token': 'YwT*oa3prpQTUuHEnI',
