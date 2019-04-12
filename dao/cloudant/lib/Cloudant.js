@@ -4,15 +4,15 @@ const path = require('path');
 let instance = null;
 
 class Cloudant {
-  console.log('cloudnat Constructor');
+  //console.log('cloudnat Constructor');
   constructor() {
     // static instance;
     if (!instance) {
       config.file(path.join('./', 'config', 'app.json'));
       let VCAP_SERVICES = config.get('VCAP_SERVICES');
       VCAP_SERVICES = typeof VCAP_SERVICES === 'string' ? JSON.parse(VCAP_SERVICES) : VCAP_SERVICES;
-      console.log(--------------------------VCAB-----------------);
-      console.log(VCAP_SERVICES);
+
+      console.log(JSON.stringify(VCAP_SERVICES));
       if (VCAP_SERVICES === undefined) {
         const URL = process.env.CLOUDANT_URL;
         console.log(URL);
@@ -23,8 +23,9 @@ class Cloudant {
           plugins: ['promises', { retry: { retryErrors: false, retryStatusCodes: [429] } }],
         });
       } else {
-        const URL = process.env.CLOUDANT_URL;
+        const URL = VCAP_SERVICES.cloudantNoSQLDB[0].credentials.url;
         console.log(URL);
+
         this.cloudant = new cloudantClient({
           url: URL,
           maxAttempt: 5,

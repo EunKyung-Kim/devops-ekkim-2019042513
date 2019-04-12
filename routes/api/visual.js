@@ -70,7 +70,7 @@ module.exports = middlewares => {
   });
 
   const getFoodPoint = body => {
-    const result = { results: { point: 0, food: [] } };
+    const result = { results: { point: 0, foods: [] } };
     const scoreLevel = 0.5;
     const imageClass = body.images[0].classifiers[0].classes;
 
@@ -86,15 +86,15 @@ module.exports = middlewares => {
                 imageClass[i].type_hierarchy.includes('plant'))
             ) {
               console.log(imageClass[i]);
-              result.results.food.push(foods[j]);
+              result.results.foods.push(foods[j]);
             }
           }
         }
       }
     }
 
-    result.results.food = _.uniq(result.results.food);
-    result.results.point = result.results.food.length;
+    result.results.foods = _.uniq(result.results.foods);
+    result.results.point = result.results.foods.length;
 
     return result;
   };

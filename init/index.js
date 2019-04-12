@@ -69,7 +69,7 @@ const initRoutes = app => {
   // error handling
   app.use((err, req, res) => {
     // eslint-disable-line no-unused-vars
-    logger.error(err);
+    logger.error(err.uiMessage);
     res.status(500).send({
       error: true,
       message: err.uiMessage,
