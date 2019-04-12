@@ -23,6 +23,7 @@ class Cloudant {
           plugins: ['promises', { retry: { retryErrors: false, retryStatusCodes: [429] } }],
         });
       } else {
+        console.log(VCAP_SERVICES);
         const URL = VCAP_SERVICES.cloudantNoSQLDB[0].credentials.url;
         console.log(URL);
 
