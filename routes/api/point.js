@@ -128,7 +128,7 @@ module.exports = middlewares => {
       })
       .then(ret => {
         console.log(ret);
-        res.send(ret);
+        res.send(ret.rows);
       })
       .catch(err => {
         res.send(ret);
