@@ -8,8 +8,8 @@ class Cloudant {
   constructor() {
     // static instance;
     if (!instance) {
-      config.file(path.join('./', 'config', 'app.json'));
-      let VCAP_SERVICES = config.get('VCAP_SERVICES');
+      //config.file(path.join('./', 'config', 'app.json'));
+      let VCAP_SERVICES = require('../../../config/app.json').VCAP_SERVICES;
       VCAP_SERVICES = typeof VCAP_SERVICES === 'string' ? JSON.parse(VCAP_SERVICES) : VCAP_SERVICES;
 
       console.log(JSON.stringify(VCAP_SERVICES));
