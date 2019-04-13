@@ -299,7 +299,7 @@ function cronWeather() {
   });
 }
 
-//cronWeather();
+cronWeather();
 
 exports.dbquery = dbquery;
 exports.putWeatherToDB = putWeatherToDB;
