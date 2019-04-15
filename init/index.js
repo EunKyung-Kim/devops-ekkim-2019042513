@@ -66,15 +66,17 @@ const initRoutes = app => {
   // Swagger
   app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
-  // error handling
-  app.use((err, req, res) => {
-    // eslint-disable-line no-unused-vars
-    logger.error(err.uiMessage);
-    res.status(500).send({
-      error: true,
-      message: err.uiMessage,
-    });
-  });
+  // // error handling
+  // app.use((err, req, res) => {
+  //   // eslint-disable-line no-unused-vars
+  //   logger.error(err.uiMessage);
+  //   if (err) {
+  //     res.send({
+  //       error: true,
+  //       message: err.uiMessage,
+  //     });
+  //   }
+  // });
 };
 
 const init = (app, dirname) => {

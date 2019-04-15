@@ -280,7 +280,7 @@ var dbquery = (i_query, i_params) =>
       console.log(results);
       if (error) {
         console.log('mysql database error : ' + error);
-        reject(new Error('mysql database error : ' + error));
+        reject(`{error : "${error}"}`);
       }
       //db.end();
       resolve(results);
@@ -300,7 +300,6 @@ function cronWeather() {
 }
 
 cronWeather();
-
 exports.dbquery = dbquery;
 exports.putWeatherToDB = putWeatherToDB;
 //exports.getWeather = getWeather;

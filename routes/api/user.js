@@ -3,7 +3,7 @@
 const express = require('express');
 const multer = require('multer');
 const logger = require('../../logger')('user');
-
+const userDAO = require('../../dao/user');
 const errorHandler = require('../../utils/errorHandler');
 
 module.exports = middlewares => {
@@ -19,6 +19,37 @@ module.exports = middlewares => {
       rev: record.doc._rev,
     }));
   };
+
+  /**
+   * @swagger
+   *
+   * /user/{uid}:
+   *   get:
+   *     tags:
+   *       - user
+   *     description: Get user data
+   *     parameters:
+   *     - in: path
+   *       name: uid
+   *       description: user ID
+   *       required: true
+   *     produces:
+   *       - application/json
+   *     responses:
+   *       200:
+   *         description: success
+   */
+  router.get('/:uid', (req, res) => {
+    logger.info('GET - get user data...');
+    userDAO
+      .get(req.params.uid)
+      .then(ret => {
+        res.send(ret);
+      })
+      .catch(err => {
+        res.send(ret);
+      });
+  });
 
   return router;
 };

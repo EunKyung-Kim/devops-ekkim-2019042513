@@ -125,6 +125,7 @@ module.exports = middlewares => {
       .search('app', 'search', {
         q: `uid:${req.params.uid} AND date:[2019${req.params.month}01* TO 2019${req.params.month}31*]`,
         include_docs: true,
+        sort: `date`,
       })
       .then(ret => {
         console.log(ret);

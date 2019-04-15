@@ -42,7 +42,7 @@ module.exports = middlewares => {
         if (results.length > 0) {
           res.send(results);
         } else {
-          res.send('ERROR: 오늘 데이터가 존재하지 않음');
+          res.send('{"ERROR": "오늘 데이터가 존재하지 않음"}');
         }
       })
       .catch(err => {

@@ -1,7 +1,7 @@
 'use strict';
 
 const express = require('express');
-const logger = require('../../logger')('drones');
+const logger = require('../../logger')('band');
 const iotf = require('../../iotf/iotmanager');
 const errorHandler = require('../../utils/errorHandler');
 
