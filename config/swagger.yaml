@@ -1,0 +1,171 @@
+swagger: '2.0'
+info:
+  description: 'KBLI Startup Applicatio'
+  version: '1.0.0'
+  title: 'KBLI-Startup'
+  termsOfService: 'http://swagger.io/terms/'
+  license:
+    name: 'Apache 2.0'
+    url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
+host: 'kbli-startup-api-server.mybluemix.net'
+basePath: '/api/v1'
+tags:
+  - name: point
+    description: point
+  - name: band
+    description: band
+  - name: user
+    description: user
+  - name: visual
+    description: visual
+schemes:
+  - 'https'
+paths:
+  /band:
+    get:
+      tags:
+        - band
+      description: Get band data
+      produces:
+        - application/json
+      responses:
+        200:
+          description: success
+  /point:
+    get:
+      tags:
+        - point
+      description: Get point data
+      produces:
+        - application/json
+      responses:
+        200:
+          description: success
+  /point/{uid}:
+    get:
+      tags:
+        - point
+      description: Get point data
+      parameters:
+        - in: path
+          name: uid
+          description: user ID
+          required: true
+          type: string
+      produces:
+        - application/json
+      responses:
+        200:
+          description: success
+    post:
+      tags:
+        - point
+      description: Add point data
+      parameters:
+        - in: path
+          name: uid
+          description: user ID
+          required: true
+          type: string
+        - in: body
+          name: body
+          description: Relation object
+          required: true
+          schema:
+            $ref: '#/definitions/point'
+      produces:
+        - application/json
+      responses:
+        200:
+          description: success
+  /point/{uid}/{month}:
+    get:
+      tags:
+        - point
+      description: Get point history list data
+      parameters:
+        - in: path
+          name: uid
+          description: user ID
+          required: true
+          type: string
+        - in: path
+          name: month
+          description: month
+          required: true
+          type: string
+      produces:
+        - application/json
+      responses:
+        200:
+          description: success
+  /point/food/{id}:
+    post:
+      tags:
+        - point
+      description: Add point data
+      parameters:
+        - in: path
+          name: id
+          description: user ID
+          required: true
+          type: string
+        - in: body
+          name: body
+          description: Relation object
+          required: true
+          schema:
+            $ref: '#/definitions/point'
+      produces:
+        - application/json
+      responses:
+        200:
+          description: success
+  /visual:
+    post:
+      tags:
+        - visual
+      description: Get visual recognition data
+      consumes:
+        - multipart/form-data
+      parameters:
+        - in: formData
+          name: image_file
+          type: file
+          description: The file to upload.
+      produces:
+        - application/json
+      responses:
+        200:
+          description: success
+  /weather:
+    get:
+      tags:
+        - weather
+      description: Get weather data
+      produces:
+        - application/json
+      responses:
+        200:
+          description: success
+definitions:
+  band:
+    type: 'object'
+    properties:
+      id:
+        type: 'string'
+  point:
+    type: 'object'
+    properties:
+      id:
+        type: 'string'
+  user:
+    type: 'object'
+    properties:
+      id:
+        type: 'string'
+  visual:
+    type: 'object'
+    properties:
+      id:
+        type: 'string'

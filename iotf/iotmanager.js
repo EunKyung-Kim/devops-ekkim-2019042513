@@ -38,6 +38,7 @@ const point = {
   total: 0,
   date: '',
 };
+const band = {};
 
 class IoTPlatformManager {
   constructor() {
@@ -52,11 +53,8 @@ class IoTPlatformManager {
     appClient.on('deviceEvent', function(deviceType, deviceId, eventType, format, payload) {
       if (eventType === 'band_data') {
         const data = JSON.parse(payload);
+        Object.assign(band, JSON.parse(payload));
         logger.debug(data);
-        // band.uid = data.uid;
-        // band.band.steps = data.band.step;
-        // band.band.hrm = data.band.hrm;
-        // band.band.age = data.band.age;
 
         point._id = `${moment(new Date()).format('YYYYMMDD')}_${data.uid}`;
         point.date = `${moment(new Date()).format('YYYYMMDD')}`;
