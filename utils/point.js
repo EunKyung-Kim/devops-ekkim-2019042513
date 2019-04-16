@@ -2,6 +2,7 @@ const logger = require('../logger')('point');
 const pointDAO = require('../dao/point');
 const weather = require('../utils/weather');
 const moment = require('moment');
+const momentz = require('moment-timezone');
 
 const point = {
   _id: '',
@@ -83,7 +84,11 @@ class Point {
 
         // 1. date_userid 문서가 존재 하는지 확인
         pointDAO
-          .get(`${moment(new Date()).format('YYYYMMDD')}_${point.uid}`)
+          .get(
+            `${momentz(new Date())
+              .tz('Asia/Seoul')
+              .format('YYYYMMDD')}_${point.uid}`
+          )
           .then(ret => {
             // 2-1. 만약 있다면 업데이트
             logger.debug('point exist');
@@ -93,7 +98,12 @@ class Point {
             //point._id = ret._id;
 
             pointDAO
-              .update(`${moment(new Date()).format('YYYYMMDD')}_${data.uid}`, point)
+              .update(
+                `${momentz(new Date())
+                  .tz('Asia/Seoul')
+                  .format('YYYYMMDD')}_${data.uid}`,
+                point
+              )
               .then(ret => {
                 logger.debug('update success');
               })
@@ -103,8 +113,14 @@ class Point {
           })
           .catch(err => {
             // 2-2. 만약 없다면 새로 생성
-            logger.debug(`${moment(new Date()).format('YYYYMMDD')}_${data.uid}`);
-            point._id = `${moment(new Date()).format('YYYYMMDD')}_${data.uid}`;
+            logger.debug(
+              `${momentz(new Date())
+                .tz('Asia/Seoul')
+                .format('YYYYMMDD')}_${data.uid}`
+            );
+            point._id = `${momentz(new Date())
+              .tz('Asia/Seoul')
+              .format('YYYYMMDD')}_${data.uid}`;
             pointDAO.save(point);
           });
 

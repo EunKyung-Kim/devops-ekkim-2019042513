@@ -35,6 +35,11 @@ module.exports = middlewares => {
    *         description: success
    */
   router.get('/getWeather', (req, res) => {
+    console.log(
+      momentz(new Date())
+        .tz('Asia/Seoul')
+        .format('YYYY/MM/DD/HH/MM/DD')
+    );
     weather
       .dbquery('SELECT * FROM t_weather WHERE wth_t_target = ? ORDER BY wth_idx DESC', [
         momentz(new Date())
