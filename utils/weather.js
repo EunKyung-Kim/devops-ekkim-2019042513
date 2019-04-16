@@ -3,9 +3,16 @@
 */
 var request = require('request');
 var moment = require('moment');
+
+moment.locale('ko', {
+  weekdays: ['일요일', '월요일', '화요일', '수요일', '목요일', '금요일', '토요일'],
+  weekdaysShort: ['일', '월', '화', '수', '목', '금', '토'],
+});
+
 var mysql = require('mysql');
 var cron = require('node-cron');
 
+// DB 연결 (IBM Cloud 꺼)
 const db = mysql.createConnection({
   host: 'cap-sg-prd-4.securegateway.appdomain.cloud',
   port: 19440,
@@ -13,22 +20,12 @@ const db = mysql.createConnection({
   charset: 'utf8',
   user: 'root',
   password: 'passw0rd',
-});
-
-// DB 연결 (IBM Cloud 꺼)
-// const db = mysql.createConnection({
-//   host: 'sl-us-south-1-portal.48.dblayer.com',
-//   port: 21267,
-//   database: 'kyobo',
-//   charset: 'utf8',
-//   user: 'admin',
-//   password: 'GHAZIVWSNTRZZZTG',
-/*
+  /*
         ssl: {
             ca: "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURlekNDQW1PZ0F3SUJBZ0lFWEsxSDBUQU5CZ2txaGtpRzl3MEJBUTBGQURBL01UMHdPd1lEVlFRREREUmkKWlc5dGMydHBiVUJyY2k1cFltMHVZMjl0TFdWak5qQXdPVGhrT0dSak9UWXhNR1ZsWkRBNVpESmpNMlV5WW1aaQpNV1l6TUI0WERURTVNRFF4TURBeE16TXdOVm9YRFRNNU1EUXhNREF4TURBd01Gb3dQekU5TURzR0ExVUVBd3cwClltVnZiWE5yYVcxQWEzSXVhV0p0TG1OdmJTMWxZell3TURrNFpEaGtZemsyTVRCbFpXUXdPV1F5WXpObE1tSm0KWWpGbU16Q0NBU0l3RFFZSktvWklodmNOQVFFQkJRQURnZ0VQQURDQ0FRb0NnZ0VCQUwzcWM2YWJPY1BpRjgyWQpua3ZZK2Jvek9ITkRsTzBJWXFiWjM3eDM3RWlTSGFmai9qdzYwWVhqaTFBNmdOdEZNcWk5cVpIZ2RwN0UwbHJCCk8reWZFeDIzaHFsRFBXK0FqRS9tZWNyRHFJOXAwaCtlWnExR0w4Q1NVUm9Wd0R5cm9QK0VNUHRIWk1ENHVvclAKTndTZDgxbXRYdVpDYWJlc0JUUWRYSW02Rk52cXQ1ZVdBc3dFSUpWNnZyUDlTeTBLT21yVEJjMDI3WjdZMklUOQoxTlArVkJwMk5QVTlhcTh5Kzc2S2d5NXliVzBXT0sxcDZuZjRGT0kxbWlqdHpYM3dyRStNYWtjVUFmek9uMHZCCk4zMm1DMnB5ZWFwMkJOUFVvUGJrWm9tL0YweUgvNHQ2WkNoWU9udlNCMWxlYjVVeFlHQzhmZENYTmJzL0p0ODEKR244cVozMENBd0VBQWFOL01IMHdIUVlEVlIwT0JCWUVGSkFmZXhQVklWNlRtMmw5aFYvc0praEk3dVN5TUE0RwpBMVVkRHdFQi93UUVBd0lDQkRBZEJnTlZIU1VFRmpBVUJnZ3JCZ0VGQlFjREFRWUlLd1lCQlFVSEF3SXdEQVlEClZSMFRCQVV3QXdFQi96QWZCZ05WSFNNRUdEQVdnQlNRSDNzVDFTRmVrNXRwZllWZjdDWklTTzdrc2pBTkJna3EKaGtpRzl3MEJBUTBGQUFPQ0FRRUFPaEhLR1pxS3Nqd3BNUVVYOWxONWMwRU1ENnRxanlYSmRORU55S1RPeUF5ZQpvV1RtT2ZQeC9mZ1Btd0NvZWRlVjBnWlRwTWc4ejRDd0dQc2d6OUphYVJ5RzgwMlh1WVhTdUpYcUE5ZnpIWjZKCjZEejdaK2tQK29CekkzZTk3ejdtZTAxTzRxWCthOGpybU9iL21mUU9hbFpSWXhPMjZzL1JLYWZhVjNRd0pDR2gKOEZwZEI4Y0tzbk96TExhZUpMckRCQjlHemhXUmRwdUtUNVQ5VS9ZOUtpaW5EQUxTeTBPZkdvOU9VY05LQ29uMAowWVp2Yk9uaHJaZHNIQU9nMW5GZkhGMGNrNVkvaHgySnJJeDJHQ084dXE0ak9DbkRja1RoM1RGNmRFQ2MvOHRoCm5EdDV1SGdVT1lRVm5CaTJ6bXk0SzN4TjNxam5NZmV1c0ZQbWxyY3Rhdz09Ci0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0K"
-        // }
+        }
 				*/
-// });
+});
 
 //운동지수 나쁨 기준치
 const C_RAIN = 1; //해당값 이상이면 나쁨
@@ -129,7 +126,7 @@ var putWeatherToDB = () =>
           ' (wth_t_created,wth_avg_hi,wth_avg_lo,wth_narration, ' +
           ' wth_max_temp,wth_min_temp,wth_qpf,wth_snow_qpf,wth_wspd, ' +
           ' wth_uv_index,wth_activity_index,wth_t_target) ' +
-          ' VALUES (NOW(),?,?,?,?,?,?,?,?,?,?,?);';
+          ' VALUES (NOW(),?,?,?,?,?,?,?,?,?,?,subdate(curdate(),-1));';
 
         return dbquery(m_query, [
           m_output.avg_hi,
@@ -142,9 +139,7 @@ var putWeatherToDB = () =>
           m_output.wspd,
           m_output.uv_index,
           m_output.activity_index,
-          moment(new Date())
-            .add(1, 'days')
-            .format('YYYY/MM/DD'),
+          //moment().add(1,'days').format('YYYY/MM/DD')
         ]);
       })
       .catch(err => {
@@ -280,7 +275,7 @@ var dbquery = (i_query, i_params) =>
       console.log(results);
       if (error) {
         console.log('mysql database error : ' + error);
-        reject(`{error : "${error}"}`);
+        reject(new Error('mysql database error : ' + error));
       }
       //db.end();
       resolve(results);
@@ -288,7 +283,14 @@ var dbquery = (i_query, i_params) =>
   });
 
 function cronWeather() {
-  cron.schedule('50 23 * * *', function() {
+  putWeatherToDB()
+    .then(results => {
+      console.log(results);
+    })
+    .catch(err => {
+      console.log(err);
+    });
+  setInterval(function() {
     putWeatherToDB()
       .then(results => {
         console.log(results);
@@ -296,10 +298,29 @@ function cronWeather() {
       .catch(err => {
         console.log(err);
       });
-  });
+  }, 1000 * 60 * 60 * 6);
+  //1000*60*60*6 = 6시간마다 업데이트
+
+  /*
+	cron.schedule('* * * * *', function(){
+		putWeatherToDB()
+		.then(results => {
+			console.log(results);
+		})
+		.catch(err => {
+			console.log(err);
+		});
+	});
+	*/
 }
 
-cronWeather();
+console.log(
+  moment()
+    .add(1, 'days')
+    .format('YYYY/MM/DD HH:mm:ss')
+);
+//subdate(curdate(),1);
+
 exports.dbquery = dbquery;
 exports.putWeatherToDB = putWeatherToDB;
 //exports.getWeather = getWeather;
