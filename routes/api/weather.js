@@ -4,6 +4,7 @@ const express = require('express');
 const logger = require('../../logger')('weather');
 const weather = require('../../utils/weather');
 const moment = require('moment');
+const momentz = require('moment-timezone');
 
 module.exports = middlewares => {
   const router = express.Router(); // eslint-disable-line new-cap
@@ -36,7 +37,9 @@ module.exports = middlewares => {
   router.get('/getWeather', (req, res) => {
     weather
       .dbquery('SELECT * FROM t_weather WHERE wth_t_target = ? ORDER BY wth_idx DESC', [
-        moment(new Date()).format('YYYY/MM/DD'),
+        momentz(new Date())
+          .tz('Asia/Seoul')
+          .format('YYYY/MM/DD'),
       ])
       .then(results => {
         if (results.length > 0) {
