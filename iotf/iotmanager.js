@@ -61,7 +61,7 @@ class IoTPlatformManager {
           .tz('Asia/Seoul')
           .format('YYYYMMDD')}_${data.uid}`;
         point.date = `${momentz(new Date())
-          .tx('Asia/Seoul')
+          .tz('Asia/Seoul')
           .format('YYYYMMDD')}`;
         point.uid = data.uid;
 
