@@ -36,7 +36,9 @@ class Point {
     logger.debug(data);
     weather
       .dbquery('SELECT * FROM t_weather WHERE wth_t_target = ? ORDER BY wth_idx DESC', [
-        moment(new Date()).format('YYYY/MM/DD'),
+        momentz(new Date())
+          .tz('Asia/Seoul')
+          .format('YYYY/MM/DD'),
       ])
       .then(results => {
         point.weather = results[0].wth_activity_index === 'bad' ? false : true;

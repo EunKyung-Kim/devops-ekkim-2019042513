@@ -5,10 +5,11 @@ const sleep = require('sleep');
 const pointDAO = require('../dao/point');
 const pointUtil = require('../utils/point');
 const moment = require('moment');
+const momentz = require('moment-timezone');
 
 const appClientConfig = {
   org: 'x01xog',
-  id: 'KBLI-startup',
+  id: 'KBLI-startup-dev',
   domain: 'internetofthings.ibmcloud.com',
   'auth-key': 'a-x01xog-lvljjuhifr',
   'auth-token': 'YwT*oa3prpQTUuHEnI',
@@ -56,8 +57,12 @@ class IoTPlatformManager {
         Object.assign(band, JSON.parse(payload));
         logger.debug(data);
 
-        point._id = `${moment(new Date()).format('YYYYMMDD')}_${data.uid}`;
-        point.date = `${moment(new Date()).format('YYYYMMDD')}`;
+        point._id = `${momentz(new Date())
+          .tz('Asia/Seoul')
+          .format('YYYYMMDD')}_${data.uid}`;
+        point.date = `${momentz(new Date())
+          .tx('Asia/Seoul')
+          .format('YYYYMMDD')}`;
         point.uid = data.uid;
 
         point.age.value = data.band.age;
