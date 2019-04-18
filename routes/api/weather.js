@@ -44,7 +44,7 @@ module.exports = middlewares => {
       .dbquery('SELECT * FROM t_weather WHERE wth_t_target = ? ORDER BY wth_idx DESC', [
         momentz(new Date())
           .tz('Asia/Seoul')
-          .format('YYYY/MM/DD'),
+          .format('YYYY-MM-DD'),
       ])
       .then(results => {
         if (results.length > 0) {
