@@ -24,7 +24,7 @@ const db = mysql.createPool({
 //운동지수 나쁨 기준치
 const C_RAIN = 1; //해당값 이상이면 나쁨
 const C_SNOW = 1; //해당값 이상이면 나쁨
-const C_WSPD = 14; //해당값 이상이면 나쁨
+const C_WSPD = 50; //해당값 이상이면 나쁨
 const C_UV = 6; //해당값 이상이면 나쁨
 const C_SUMMER_PERIOD = [0416, 1015]; //기간 : 04/16 ~ 10/15
 const C_SUMMER = 7; //해당값 이상 높으면 나쁨
