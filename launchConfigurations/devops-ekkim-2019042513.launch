@@ -1,0 +1,14 @@
+{
+  "ServiceId": "com.ibm.cloudoe.orion.client.deploy",
+  "Params": {
+    "Target": {
+      "Url": "https://api.ng.bluemix.net",
+      "Org": "keymoa",
+      "Space": "QA4popeye"
+    },
+    "Name": "devops-ekkim-20190424030943157",
+    "Instrumentation": {}
+  },
+  "Path": "manifest.yml",
+  "Type": "Cloud Foundry"
+}

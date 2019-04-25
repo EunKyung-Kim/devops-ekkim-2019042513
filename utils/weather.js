@@ -13,8 +13,8 @@ var mysql = require('mysql');
 var cron = require('node-cron');
 
 const db = mysql.createPool({
-  host: 'cap-sg-prd-4.securegateway.appdomain.cloud',
-  port: 19440,
+  host: '52.116.36.121',
+  port: 3306,
   database: 'kyobo',
   charset: 'utf8',
   user: 'root',
